@@ -13,12 +13,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
 
+  const { theme, setTheme } = useTheme("light");
+
   return (
     <html suppressHydrationWarning lang="en">
       <head />
       <body className="dark:bg-black">
         <Providers>
-          <Header />
+          <Header
+          // onClick={() => setTheme(theme === "dark" ? "light" : "dark")} />
+
           {children}
           <Footer />
           <ScrollToTop />

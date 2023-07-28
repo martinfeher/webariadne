@@ -44,6 +44,7 @@ const AboutSectionTwo = () => {
                   do eiusmod tempor incididunt.
                 </p>
               </div>
+
               <div className="mb-9">
               <h5 className="mb-4 text-[22px] text-gray-700 ">
                   Optimization of data processing, adaptive search client-side, server-side processing

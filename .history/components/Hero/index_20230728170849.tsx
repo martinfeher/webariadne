@@ -1,10 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+// import { useTheme } from "next-themes";
 
 const Hero = () => {
+
+  // useTheme("light");
+
   return (
     <>
-      <section className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
+      <section className="relative z-10 overflow-hidden pt-[20px] pb-[20px] md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -20,8 +24,8 @@ const Hero = () => {
                   {/* Live search, it gives visitors of the website an option to search for relevant information in blog posts, pages, products, categories and attributes. */}
                   {/* Search allowing visitors to find the relevant website content and information. Removing the barriers to search for the information. */}
                 </h1>
-                <div>Wordpress search plugin</div>
-                <div>Website search javacript</div>
+                <a href="wp.webariadne.com"><div>Wordpress search plugin</div></a>
+                {/* <a href="wp.webariadne.com"><div>Javascript search</div></a> */}
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
               </div>
             </div>

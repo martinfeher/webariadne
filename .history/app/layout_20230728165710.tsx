@@ -13,12 +13,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
 
+
   return (
     <html suppressHydrationWarning lang="en">
       <head />
       <body className="dark:bg-black">
         <Providers>
           <Header />
+          
           {children}
           <Footer />
           <ScrollToTop />

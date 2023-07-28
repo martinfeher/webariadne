@@ -13,6 +13,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
 
+  const { theme, setTheme } = useTheme("light");
+
+  setTheme("light");
+
+
   return (
     <html suppressHydrationWarning lang="en">
       <head />

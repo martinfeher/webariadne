@@ -21,7 +21,7 @@ const Hero = () => {
                   {/* Search allowing visitors to find the relevant website content and information. Removing the barriers to search for the information. */}
                 </h1>
                 <div>Wordpress search plugin</div>
-                <div>Website search javacript</div>
+                <div>Website search javacript wit</div>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
               </div>
             </div>

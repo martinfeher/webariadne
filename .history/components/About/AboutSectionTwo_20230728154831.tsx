@@ -28,20 +28,11 @@ const AboutSectionTwo = () => {
                   do eiusmod tempor incididunt.
                 </p>
               </div>
-              {/* <div className="mb-9">
-                <h5 className="mb-4 text-[22px] text-gray-700 ">
-                  Search in content titles and description
-                </h5>
-                <p className="text-base leading-relaxed text-body-color">
-                </p>
-              </div> */}
               <div className="mb-9">
-                <h5 className="mb-4 text-[22px] text-gray-700 ">
-                  Editing style to the website content and mobile screens.
+              <h5 className="mb-4 text-[22px] text-gray-700 ">
+                Search in content titles and description
                 </h5>
                 <p className="text-base leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
                 </p>
               </div>
               <div className="mb-9">
