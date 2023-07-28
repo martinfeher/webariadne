@@ -14,12 +14,12 @@ const Hero = () => {
               >
                 <h1 className="mb-5 !text-[24px] font-[600] text-gray-700 leading-tight">
                   {/* <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight"> */}
-                  Live search with autocomplete function
+                  Live search with autocomplete function.
                   {/* Live search, it gives visitors of the website an option to search for relevant information. */}
                   {/* Live search, it gives visitors of the website an option to search for relevant information in blog posts, pages, products, categories and attributes. */}
                   {/* Search allowing visitors to find the relevant website content and information. Removing the barriers to search for the information. */}
                 </h1>
-                <div>Wordpress search plugin</div>
+                <div>Wordpress search</div>
                 {/* <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
                   lorem ipsum
                 </p> */}

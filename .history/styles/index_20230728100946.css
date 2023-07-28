@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 
-/* .w-\[40px\] {
-  width: 40px;
-} */
+.w-[40px] {
+  
+}
 
 @layer base {
   body {

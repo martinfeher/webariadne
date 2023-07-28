@@ -9,11 +9,11 @@ import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
+import { Lato } from "@next/font/google";
 
-import { Poppins } from "@next/font/google";
-  const poppins = Poppins({
+const lato = Lato({
     weight: '400',
-    subsets: ["latin"] });
+   subsets: ["latin"] });
 
 export default function Home() {
   return (

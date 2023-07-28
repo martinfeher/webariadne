@@ -10,7 +10,7 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 
-import { Poppins } from "@next/font/google";
+  import { Poppins } from "@next/font/google";
   const poppins = Poppins({
     weight: '400',
     subsets: ["latin"] });

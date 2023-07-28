@@ -10,8 +10,14 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 
-import { Poppins } from "@next/font/google";
-  const poppins = Poppins({
+// import { Lato } from "@next/font/google";
+// const lato = Lato({
+//   weight: '400',
+//   subsets: ["latin"] });
+
+
+  import { Poppins } from "@next/font/google";
+  const lato = Lato({
     weight: '400',
     subsets: ["latin"] });
 

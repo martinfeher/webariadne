@@ -10,10 +10,10 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 
-import { Poppins } from "@next/font/google";
-  const poppins = Poppins({
-    weight: '400',
-    subsets: ["latin"] });
+import { Lato } from "@next/font/google";
+const lato = Lato({
+  weight: '400',
+  subsets: ["latin"] });
 
 export default function Home() {
   return (

@@ -58,7 +58,7 @@ const Header = () => {
                   className=""
                 />
               </Link>
-              <div className="text-[18px]">WebAriadne</div>
+              <div className="font-[">WebAriadne</div>
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>

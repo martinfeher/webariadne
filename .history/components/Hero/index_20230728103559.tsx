@@ -19,7 +19,7 @@ const Hero = () => {
                   {/* Live search, it gives visitors of the website an option to search for relevant information in blog posts, pages, products, categories and attributes. */}
                   {/* Search allowing visitors to find the relevant website content and information. Removing the barriers to search for the information. */}
                 </h1>
-                <div>Wordpress search plugin</div>
+                <div>Wordpress search </div>
                 {/* <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
                   lorem ipsum
                 </p> */}

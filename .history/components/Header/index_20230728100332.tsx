@@ -43,7 +43,7 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 flex items-center max-w-full px-4 xl:mr-12">
+            <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
                 className={`header-logo block w-full ${
@@ -51,14 +51,20 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/icon_109_200x200.png"
+                  src="/images/logo/logo-2.svg"
                   alt="logo"
-                  width={40}
-                  height={40}
-                  className=""
+                  width={140}
+                  height={30}
+                  className="w-full dark:hidden"
+                />
+                <Image
+                  src="/images/logo/logo.svg"
+                  alt="logo"
+                  width={140}
+                  height={30}
+                  className="hidden w-full dark:block"
                 />
               </Link>
-              <div className="text-[18px]">WebAriadne</div>
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>
@@ -100,7 +106,7 @@ const Header = () => {
                             href={menuItem.path}
                             className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                           >
-                            {menuItem.title}
+                            {menuItem.title}..
                           </Link>
                         ) : (
                           <>

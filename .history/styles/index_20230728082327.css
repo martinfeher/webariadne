@@ -4,11 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* .w-\[40px\] {
-  width: 40px;
-} */
-
 @layer base {
   body {
     font-family: "Inter", sans-serif;

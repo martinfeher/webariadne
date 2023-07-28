@@ -3,7 +3,9 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
+      <section
+        id="home"
+        className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -14,15 +16,17 @@ const Hero = () => {
               >
                 <h1 className="mb-5 !text-[24px] font-[600] text-gray-700 leading-tight">
                   {/* <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight"> */}
-                  Live search with autocomplete function
+                  Live search with autocomplete function.
                   {/* Live search, it gives visitors of the website an option to search for relevant information. */}
                   {/* Live search, it gives visitors of the website an option to search for relevant information in blog posts, pages, products, categories and attributes. */}
                   {/* Search allowing visitors to find the relevant website content and information. Removing the barriers to search for the information. */}
                 </h1>
-                <div>Wordpress search plugin</div>
-                {/* <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
+            
+
+                <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
+
                   lorem ipsum
-                </p> */}
+                </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   {/* <Link
                     href="https://nextjstemplates.com/templates/saas-starter-startup"
