@@ -31,7 +31,6 @@ const menuData: Menu[] = [
     title: "Contact Us",
     path: "/contact-us",
     newTab: false,
-  },
+  }
 ];
-
 export default menuData;

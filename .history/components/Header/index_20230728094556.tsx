@@ -57,13 +57,13 @@ const Header = () => {
                   height={30}
                   className="w-full dark:hidden"
                 />
-                <Image
+                {/* <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
                   width={140}
                   height={30}
                   className="hidden w-full dark:block"
-                />
+                /> */}
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
@@ -147,7 +147,7 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                {/* <Link
+                <Link
                   href="/signin"
                   className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70 dark:text-white md:block"
                 >
@@ -158,8 +158,9 @@ const Header = () => {
                   className="ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
                 >
                   Sign Up
-                </Link> */}
+                </Link>
                 <div>
+                  <ThemeToggler />
                 </div>
               </div>
             </div>

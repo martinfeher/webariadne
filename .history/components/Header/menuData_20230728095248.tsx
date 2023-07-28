@@ -26,12 +26,5 @@ const menuData: Menu[] = [
       },
     ],
   },
-  {
-    id: 42,
-    title: "Contact Us",
-    path: "/contact-us",
-    newTab: false,
-  },
 ];
-
 export default menuData;

@@ -25,13 +25,12 @@ const menuData: Menu[] = [
         newTab: false,
       },
     ],
-  },
   {
     id: 42,
     title: "Contact Us",
     path: "/contact-us",
     newTab: false,
   },
+  },
 ];
-
 export default menuData;

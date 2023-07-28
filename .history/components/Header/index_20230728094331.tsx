@@ -6,11 +6,13 @@ import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 
 const Header = () => {
+  // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
 
+  // Sticky Navbar
   const [sticky, setSticky] = useState(false);
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
@@ -23,6 +25,7 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyNavbar);
   });
 
+  // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
   const handleSubmenu = (index) => {
     if (openIndex === index) {
@@ -106,7 +109,7 @@ const Header = () => {
                             href={menuItem.path}
                             className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                           >
-                            {menuItem.title}
+                            {menuItem.title}..
                           </Link>
                         ) : (
                           <>
@@ -147,7 +150,7 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                {/* <Link
+                <Link
                   href="/signin"
                   className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70 dark:text-white md:block"
                 >
@@ -158,8 +161,9 @@ const Header = () => {
                   className="ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
                 >
                   Sign Up
-                </Link> */}
+                </Link>
                 <div>
+                  <ThemeToggler />
                 </div>
               </div>
             </div>
