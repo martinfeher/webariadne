@@ -42,16 +42,16 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-[60px] right-0"> 
+        <div className="absolute top-[150px] right-0"> 
         {/* <div className="flex justify-start items-start w-full"> */}
-          {/* <Image
+          <Image
               src="/images/hero/ariadne_statue_concept_01.jpg"
               alt="ariadne"
               // fill
-              width={270}
-              height={270}
-              className="opacity-30"
-            /> */}
+              width={300}
+              height={300}
+              
+            />
         </div>
         <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
