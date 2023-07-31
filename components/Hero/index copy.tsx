@@ -1,10 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+// import { useTheme } from "next-themes";
 
 const Hero = () => {
+
+  // useTheme("light");
   return (
     <>
-      <section className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
+      <section className="relative z-10 overflow-hidden pt-[20px] pb-[20px] md:pt-[130px] md:pb-[110px] xl:pt-[160px] xl:pb-[120px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -13,15 +16,15 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 !text-[24px] font-[600] text-gray-700 leading-tight">
+                <h1 className="mb-4 !text-[24px] font-[600] text-gray-700 leading-tight">
                   {/* <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight"> */}
                   Live search with autocomplete function
                   {/* Live search, it gives visitors of the website an option to search for relevant information. */}
                   {/* Live search, it gives visitors of the website an option to search for relevant information in blog posts, pages, products, categories and attributes. */}
                   {/* Search allowing visitors to find the relevant website content and information. Removing the barriers to search for the information. */}
                 </h1>
-                <div>Wordpress search plugin</div>
-                <div>Website search javacript</div>
+                <div className="mb-[3px]"><a href="https://wp.webariadne.com"><div>Wordpress search plugin</div></a></div>
+                {/* <div className="mb-[3px]">Website search javascript</div> */}
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
               </div>
             </div>
