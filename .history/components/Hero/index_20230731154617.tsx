@@ -18,7 +18,7 @@ const Hero = () => {
                 <h1 className="mb-4 !text-[24px] font-[600] text-gray-700 leading-tight">
                 Instant search to help to find relevant website content and information.
                 </h1>
-                <a href="https://wp.webariadne.com"><div className="mb-[3px]">WordPress plugin to build search user interface</div></a>
+                <a href=""><div className="mb-[3px]">WordPress plugin to build search user interface</div></a>
                 {/* <div className="mb-[3px]">Performant easy to customise search to help to find relevant website content and information</div> */}
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
               </div>
