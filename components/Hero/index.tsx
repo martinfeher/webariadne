@@ -16,7 +16,7 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s">
                 <h1 className="mb-4 !text-[24px] font-[600] text-gray-700 leading-tight">
-                WordPress plugin to build search user interface
+                  WordPress plugin to build search user interface
                 </h1>
                 <div className="mb-[3px]">Instant search to help to find relevant website content and information.</div>
                 {/* <div className="mb-[3px]">Performant easy to customise search to help to find relevant website content and information</div> */}
