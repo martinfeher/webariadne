@@ -17,11 +17,12 @@ const FeaturesSectionOne = () => {
               />
             </div>
           </div>
+
           <div className="w-full px-4 lg:w-[50%]">
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
               <div className="mb-9">
                 <h5 className="mb-4 text-[22px] text-gray-700 ">
-                Live search with autocomplete function
+                  Live search with autocomplete function
                 </h5>
                 <p className="text-base leading-relaxed text-body-color">
                   Find the relevant items searching in the titles and descriptions of the Woocommerce products, blog posts, pages. You can enable and exclude each data type from the search results.
@@ -29,7 +30,9 @@ const FeaturesSectionOne = () => {
                   You can utilize searching by Sku of the Woocommerce products.
                 </p>
               </div>
-             
+              <div>
+
+              </div>
             </div>
           </div>
         </div>

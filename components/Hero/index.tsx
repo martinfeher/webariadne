@@ -7,20 +7,28 @@ const Hero = () => {
   // useTheme("light");
   return (
     <>
-      <section className="relative z-10 overflow-hidden pt-[20px] pb-[20px] md:pt-[130px] md:pb-[110px] xl:pt-[160px] xl:pb-[120px]"
-      >
+      <section className="relative z-10 pt-[20px] pb-[20px] md:pt-[120px] xl:pt-[140px] md:pb-[100px] xl:pb-[110px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s">
-                <h1 className="mb-4 !text-[24px] font-[600] text-gray-700 leading-tight">
+                <h1 className="mb-4 !text-[21px] font-[600] text-gray-700 leading-tight">
                   WordPress plugin to build search user interface
                 </h1>
-                <div className="mb-[3px]">Instant search to help to find relevant website content and information.</div>
-                {/* <div className="mb-[3px]">Performant easy to customise search to help to find relevant website content and information</div> */}
+                <div className="mb-[18px] text-[13px] text-gray-600" >Instant search to help to find relevant website content and information.</div>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
+                {/* <div>You can try the plugin here, type "outdooor"</div> */}
+                {/* <div className="flex flex-col text-start"> */}
+                <div className="flex flex-col text-center">
+                {/* <div className="flex flex-col justify-start text-start"> */}
+                <div className="mb-[8px] text-[13px] text-gray-600">Customized user interface for visitors on website <a href="/website-customization" className=" text-gray-400">more information</a></div>
+                {/* <div className="mb-[8px]">Personalizable to websites <a href="/website-customization" className=" text-gray-400">more information</a></div> */}
+                </div>
+                <div>
+                  <div id="weawp_search" className="h-[43px]"></div> 
+                </div>
               </div>
             </div>
           </div>

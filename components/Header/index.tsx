@@ -60,7 +60,9 @@ const Header = () => {
               </Link>
               <div className="text-[18px]">WebAriadne</div>
             </div>
-            <div className="flex w-full items-center justify-between px-4">
+            <div className="menu-top flex w-full">
+            {/* <div className="menu-top flex w-full items-center justify-between px-4"> */}
+            {/* <div className="menu-top flex flex-row w-full items-center justify-between px-4"> */}
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -98,7 +100,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                            className={`h-[72px] flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                           >
                             {menuItem.title}
                           </Link>
