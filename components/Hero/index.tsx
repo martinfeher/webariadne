@@ -7,7 +7,8 @@ const Hero = () => {
   // useTheme("light");
   return (
     <>
-      <section className="relative z-10 pt-[20px] pb-[20px] md:pt-[120px] xl:pt-[140px] md:pb-[100px] xl:pb-[110px]">
+      <section className="relative z-10 pt-[20px] pb-[20px] md:pt-[120px] xl:pt-[140px] md:pb-[80px] xl:pb-[90px]">
+      {/* <section className="relative z-10 pt-[20px] pb-[20px] md:pt-[120px] xl:pt-[140px] md:pb-[100px] xl:pb-[110px]"> */}
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
@@ -23,12 +24,10 @@ const Hero = () => {
                 {/* <div className="flex flex-col text-start"> */}
                 <div className="flex flex-col text-center">
                 {/* <div className="flex flex-col justify-start text-start"> */}
-                <div className="mb-[8px] text-[13px] text-gray-600">Customized user interface for visitors on website <a href="/website-customization" className=" text-gray-400">more information</a></div>
+                <div className="mb-[8px] text-[13px] text-gray-600">Customizable user interface for visitors on website <a href="/website-customization" className=" text-gray-400">more information</a></div>
                 {/* <div className="mb-[8px]">Personalizable to websites <a href="/website-customization" className=" text-gray-400">more information</a></div> */}
                 </div>
-                <div>
-                  <div id="weawp_search" className="h-[43px]"></div> 
-                </div>
+              
               </div>
             </div>
           </div>
