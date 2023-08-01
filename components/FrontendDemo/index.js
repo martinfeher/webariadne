@@ -4,7 +4,8 @@ import Script from "next/script";
 <Script src="/js/weawp_search.js" />
 const FrontendDemo = () => {
     return (
-      <div></div>
+      <div>
+      </div>
     );
 };
 
