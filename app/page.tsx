@@ -31,13 +31,13 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <DemoWebariadne />
-        
-      {/* <FeaturesSectionOne /> */}
-      {/* <FeaturesSectionTwo /> */}
+      <FeaturesSectionOne />
+      <FeaturesSectionTwo />
+      
       {/* <AboutSectionTwo /> */}
       {/* <AboutSectionOne /> */}
       {/* <Pricing /> */}
-      <Blog />
+      {/* <Blog /> */}
       <Contact />
     </>
 
