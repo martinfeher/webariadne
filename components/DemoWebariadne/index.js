@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import Script from "next/script";
+// import { useMediaQuery } from 'react-responsive';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -8,7 +9,7 @@ function classNames(...classes) {
 
 export default function DemoWebariadne() {
 
-  const [demoWebariadne, setDemoWebariadne] = useState('frontend');
+  const [demoWebariadne, setDemoWebariadne] = useState('admin');
   const [demoSectionActive, setdemoSectionActive] = useState(false);
   const clickDemoFrontendSection = () => {
     setdemoSectionActive(true)
@@ -18,6 +19,23 @@ export default function DemoWebariadne() {
     (demoWebariadne === 'admin' && value === 'frontend') && setdemoSectionActive(false)
     setDemoWebariadne(value)
   }
+
+
+  const [openDescritonSelectTheme, setOpenDescritonSelectTheme] = useState(false);
+
+  const toggleDescriptionSelectTheme = () => {
+    setOpenDescritonSelectTheme(!openDescritonSelectTheme)
+  }
+  // const isTabletOrMobile = useMediaQuery({ maxWidth: settings.loaded ? parseInt(settings.loaded.Responsivity['mobileBP']) : 1224 })
+
+const demoAdminDescription = [
+    {title: 'Select theme',
+      description: 'In the left menu you can click on the Themes. The secondary sidebar will display the list of the themes.',
+    },
+    {title: 'Theme style',
+      description: 'By selecting the Style, the options to edit text, backgorund, typography will appear in the secondary sidebar.',
+    }
+  ]
 
   return (
     <div className="container h-auto min-h-[150px] w-[1200px]">
@@ -51,29 +69,30 @@ export default function DemoWebariadne() {
               </div>
             </div>
           </div>
-          <div className="flex">
-          {/* <div className="flex border border-gray-300 rounded-[12px] overflow-hidden"> */}
+
+          <div className="flex flex-col lg:flex-row">
             {demoWebariadne === "admin" && (
-              <div className="mt-[26px] flex w-[190px] flex-col pr-[12px]">
-                <div className="mb-[10px]  border border-gray-200 rounded-[8px] cursor-pointer">
-                  <div className="mb-[1px] px-[10px] pt-[9px] pb-[1px]">Select theme</div>
-                  {/* <div className="mb-[1px] px-[10px] py-[5px] border-b border-gray-150">Select theme</div> */}
-                  <div className="ml-[3px] px-[10px] pt-[0] pb-[6px] text-[12px] text-gray-500">
-                    In the left menu you can click on the Themes. The secondary sidebar will display the list of the themes.
-                  </div>
+              <div className="flex flex-row lg:flex-col w-[190px] pr-[12px] mt-[26px] ">
+
+                <div className="mb-[10px] border border-gray-200 rounded-[8px] cursor-pointer">
+                  <div className="flex items-center h-[35px] mb-[1px] px-[10px]" onClick={()=> toggleDescriptionSelectTheme()}><div>Select theme</div></div>
+                  {openDescritonSelectTheme && (
+                    <div className={`ml-[3px] px-[10px] pt-[0] pb-[6px] text-[12px] text-gray-500 hidden lg:block ${openDescritonSelectTheme ? '!block' : ''} `}>
+                      In the left menu you can click on the Themes. The secondary sidebar will display the list of the themes.
+                    </div>
+                  )}
                 </div>
-               
+
                 <div className="mb-[10px] px-[12px] py-[10px] border border-gray-200 rounded-[8px] cursor-pointer">
                   <div>Theme style</div>
                   <div className="ml-[3px] text-[12px] text-gray-500">
                     By selecting the Style, the options to edit text, backgorund, typography will appear in the secondary sidebar.
-                    {/* By selecting the Style the options to edit text, backgorund, typography will appear in the secondary sidebar. */}
                   </div>
                 </div>
                 <div className="mb-[10px] px-[12px] py-[10px] border border-gray-200 rounded-[8px] cursor-pointer">
                   <div>Data Types</div>
                   <div className="ml-[3px] text-[12px] text-gray-500">
-                    You can select Porducts, Blog posts, Pages data types to be included in the result window.
+                    You can select Products, Blog posts, Pages data types to be included in the result window.
                   </div>
                 </div>
                 <div className="mb-[10px] px-[12px] py-[10px] border border-gray-200 rounded-[8px] cursor-pointer">
@@ -88,8 +107,11 @@ export default function DemoWebariadne() {
                      By selecting Duplicate Theme adding inserting name you are able to create a variant of the theme with new attributes.
                   </div>
                 </div>
+
+
               </div>
             )}
+
             <div
               className="w-full rounded-[12px] bg-gray-300 px-[25px] pb-[27px] pt-[25px]"
               style={
@@ -107,8 +129,7 @@ export default function DemoWebariadne() {
                 } h-[43px]`}
                 onClick={() => clickDemoFrontendSection()}
               ></div>
-              <div
-                id="weawp_search_admin"
+              <div id="weawp_search_admin"
                 className={`${demoWebariadne !== "admin" ? "hidden" : ""}`}
               ></div>
             </div>
