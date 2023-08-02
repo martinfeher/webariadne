@@ -7,8 +7,7 @@ const Hero = () => {
   // useTheme("light");
   return (
     <>
-      <section className="relative z-10 pt-[20px] pb-[20px] md:pt-[120px] xl:pt-[140px] md:pb-[80px] xl:pb-[90px]">
-      {/* <section className="relative z-10 pt-[20px] pb-[20px] md:pt-[120px] xl:pt-[140px] md:pb-[100px] xl:pb-[110px]"> */}
+      <section className="relative z-10 pt-[20px] pb-[20px] md:pt-[120px] xl:pt-[140px] md:pb-[80px] xl:pb-[90px] mb-[20px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
