@@ -21,7 +21,7 @@ export default function DemoWebariadne() {
   }
 
 
-  const [openDescritonSelectTheme, setOpenDescritonSelectTheme] = useState(false);
+  const [openDescritonSelectTheme, setOpenDescritonSelectTheme] = useState(true);
 
   const toggleDescriptionSelectTheme = () => {
     setOpenDescritonSelectTheme(!openDescritonSelectTheme)
@@ -71,9 +71,9 @@ const demoAdminDescription = [
           </div>
 
           <div className="flex flex-col lg:flex-row">
+
             {demoWebariadne === "admin" && (
               <div className="flex flex-row lg:flex-col w-[190px] pr-[12px] mt-[26px] ">
-
                 <div className="mb-[10px] border border-gray-200 rounded-[8px] cursor-pointer">
                   <div className="flex items-center h-[35px] mb-[1px] px-[10px]" onClick={()=> toggleDescriptionSelectTheme()}><div>Select theme</div></div>
                   {openDescritonSelectTheme && (
@@ -82,7 +82,6 @@ const demoAdminDescription = [
                     </div>
                   )}
                 </div>
-
                 <div className="mb-[10px] px-[12px] py-[10px] border border-gray-200 rounded-[8px] cursor-pointer">
                   <div>Theme style</div>
                   <div className="ml-[3px] text-[12px] text-gray-500">
@@ -107,11 +106,8 @@ const demoAdminDescription = [
                      By selecting Duplicate Theme adding inserting name you are able to create a variant of the theme with new attributes.
                   </div>
                 </div>
-
-
               </div>
             )}
-
             <div
               className="w-full rounded-[12px] bg-gray-300 px-[25px] pb-[27px] pt-[25px]"
               style={
