@@ -144,8 +144,7 @@ export default function DemoWebariadne() {
                 } h-[43px]`}
                 onClick={() => clickDemoFrontendSection()}
               ></div>
-              <div className="weawp_search" id="weawp_search_admin"
-                className={`${demoWebariadne !== "admin" ? "hidden" : ""}`}
+              <div id="weawp_search_admin" className={`weawp_search ${demoWebariadne !== "admin" ? "hidden" : ""}`}
               ></div>
             </div>
           </div>
