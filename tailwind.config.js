@@ -7,6 +7,9 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
+    // screens: {
+    //   'sm': '720px',
+    // },
     container: {
       center: true,
       padding: "1rem",
@@ -15,10 +18,12 @@ module.exports = {
       xs: "450px",
       // => @media (min-width: 450px) { ... }
 
-      sm: "575px",
+      sm: "720px",
+      // sm: "575px",
       // => @media (min-width: 576px) { ... }
 
-      md: "768px",
+      md: "820px",
+      // md: "768px",
       // => @media (min-width: 768px) { ... }
 
       lg: "992px",

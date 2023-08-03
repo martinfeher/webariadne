@@ -14,7 +14,7 @@ import Script from "next/script";
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode;  
 }) {
 
   return (
