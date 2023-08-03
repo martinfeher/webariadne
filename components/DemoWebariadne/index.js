@@ -63,6 +63,7 @@ export default function DemoWebariadne() {
         };
         return newItems;
       });
+
     }
 
   return (
@@ -99,20 +100,33 @@ export default function DemoWebariadne() {
           </div>
 
           <div className="flex flex-col lg:flex-row">
+            
             {demoWebariadne === "admin" && (
               <div className="flex flex-row lg:flex-col w-auto lg:w-[190px] pr-[12px] mt-[26px] ">
+                
                 {demoAdminDescription.map((item, index) => (
                   <div key={index} className="mb-[10px] border border-gray-200 rounded-[8px] cursor-pointer w-[120px] mr-[5px] lg:w-auto">
                     <div className="flex items-center h-[25px] mb-[1px] px-[10px] pt-[6px] pb-[6px] lg:pb-0 text-center lg:text-left" onClick={()=> toggleDescriptionSelectTheme(index)}><div>{item.title}</div></div>
-                      <div className={`ml-[3px] px-[10px] pt-[0] pb-[6px] text-[12px] text-gray-500 hidden lg:block text-left ${openDescritonSelectTheme[index].descriptionMobileScreenOpen === true ? '!block' : ''} `}>
-                        {item.description}
-                      </div>
+                      
+                      {openDescritonSelectTheme[index].descriptionMobileScreenOpen === true && (
+                        <div className={`ml-[3px] px-[10px] pt-[0] pb-[6px] text-[12px] text-gray-500 h-auto`}>
+                          {/* <div className={`ml-[3px] px-[10px] pt-[0] pb-[6px] text-[12px] text-gray-500 hidden lg:block text-left ${openDescritonSelectTheme[index].descriptionMobileScreenOpen === true ? '!block' : ''} `}> */}
+                          {item.description}
+                        </div>
+                      )}
+
+                      {openDescritonSelectTheme[index].descriptionMobileScreenOpen !== true && (
+                        <div className={`ml-[3px] px-[10px] pt-[0] pb-[6px] text-[12px] text-gray-500 h-0 lg:h-auto text-left`}>
+                          {item.description}
+                        </div>
+                      )}
+
                   </div>
                   ))
                 }
+
               </div>
             )}
-
             <div
               className="w-full rounded-[12px] bg-gray-300 px-[25px] pb-[27px] pt-[25px]"
               style={
@@ -130,7 +144,7 @@ export default function DemoWebariadne() {
                 } h-[43px]`}
                 onClick={() => clickDemoFrontendSection()}
               ></div>
-              <div id="weawp_search_admin"
+              <div className="weawp_search" id="weawp_search_admin"
                 className={`${demoWebariadne !== "admin" ? "hidden" : ""}`}
               ></div>
             </div>
