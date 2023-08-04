@@ -15,16 +15,18 @@ module.exports = {
       padding: "1rem",
     },
     screens: {
-      xs: "450px",
-      // => @media (min-width: 450px) { ... }
+      xs: "520px",
+      // => @media (min-width: 520px) { ... }
 
-      sm: "720px",
+      sm: "575px",
+      // sm: "720px",
       // sm: "575px",
-      // => @media (min-width: 576px) { ... }
+      // => @media (min-width: 720px) { ... }
 
-      md: "820px",
+      md: "568px",
+      // md: "820px",
       // md: "768px",
-      // => @media (min-width: 768px) { ... }
+      // => @media (min-width: 820px) { ... }
 
       lg: "992px",
       // => @media (min-width: 992px) { ... }
@@ -35,6 +37,7 @@ module.exports = {
       "2xl": "1400px",
       // => @media (min-width: 1400px) { ... }
     },
+
     extend: {
       boxShadow: {
         signUp: "0px 5px 10px rgba(4, 10, 34, 0.2)",

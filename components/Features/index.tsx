@@ -1,8 +1,6 @@
 
 "use client";
 
-// import "../../styles/weawp_search.min.css";
-
 const Features = () => {
   return (
     <>

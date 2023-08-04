@@ -9,7 +9,8 @@ function classNames(...classes) {
 
 export default function DemoWebariadne() {
 
-  const [demoWebariadne, setDemoWebariadne] = useState('admin');
+  const [demoWebariadne, setDemoWebariadne] = useState('frontend');
+  // const [demoWebariadne, setDemoWebariadne] = useState('admin');
   const [demoSectionActive, setdemoSectionActive] = useState(false);
   const clickDemoFrontendSection = () => {
     setdemoSectionActive(true)
@@ -63,11 +64,10 @@ export default function DemoWebariadne() {
         };
         return newItems;
       });
-
     }
 
   return (
-    <div className="container h-auto min-h-[150px] w-[1200px]">
+    <div className="container h-auto min-h-[150px] w-auto xl:w-[1330px] px-[2px] lg:px-4">
       <Script src="/assets/webariadne/weawp_search_data.js" />
       <Script src="/assets/webariadne/admin/weawp_search.min.js" />
       <Script src="/assets/webariadne/frontend/weawp_search.min.js" />
@@ -102,7 +102,7 @@ export default function DemoWebariadne() {
           <div className="flex flex-col lg:flex-row">
             
             {demoWebariadne === "admin" && (
-              <div className="flex flex-row lg:flex-col w-auto lg:w-[190px] pr-[12px] mt-[26px] ">
+              <div className="flex flex-row lg:flex-col w-auto lg:w-[170px] pr-[2px] mt-[26px] ">
                 
                 {demoAdminDescription.map((item, index) => (
                   <div key={index} className="mb-[10px] border border-gray-200 rounded-[8px] cursor-pointer w-[120px] mr-[5px] lg:w-auto">
