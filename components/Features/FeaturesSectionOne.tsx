@@ -24,10 +24,12 @@ const FeaturesSectionOne = () => {
                 <h5 className="mb-4 text-[22px] text-gray-700 ">
                   Live search with autocomplete function
                 </h5>
+
                 <p className="text-base leading-relaxed text-body-color">
-                  Find the relevant items searching in the titles and descriptions of the Woocommerce products, blog posts, pages. You can enable and exclude each data type from the search results.
+                  You can utilise the search to find blog posts, pages, woocommerce products by search in the titles and description. 
+                  {/* Find relevant information searching in the titles and descriptions of the WooCommerce products, blog posts, pages. You can enable and exclude each data type from the search results.
                   You can search by the WordPress terms and taxonomies (categories, tags), attributes color, size.
-                  You can utilize searching by Sku of the Woocommerce products.
+                  You can utilize searching by Sku of the Woocommerce products. */}
                 </p>
               </div>
               <div>

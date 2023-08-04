@@ -12,9 +12,8 @@ const FeaturesSectionTwo = () => {
                   Easy-to-use user interface to customise search experience.
                 </h5>
                 <p className="text-base leading-relaxed text-body-color">
-                  Customise the style, typography backgorund and text color using admin user interface.
-                  You can control the number of the items displayed in the search result window by editing the parameters in the admin dashboard.
-                </p> 
+                  Customise the style, typography backgorund and text color using the admin dashboard.
+                </p>
               </div>
             </div>
           </div>
