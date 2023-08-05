@@ -5,6 +5,7 @@ const FeaturesSectionTwo = () => {
     <section className="py-5">
       <div className="container">
         <div className="m-auto flex max-w-[1040px] flex-wrap items-center justify-center">
+
           <div className="w-full px-4 lg:w-[50%]">
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
               <div className="mb-9">
@@ -17,6 +18,7 @@ const FeaturesSectionTwo = () => {
               </div>
             </div>
           </div>
+
           <div className="flex w-full justify-start lg:mr-[4%] lg:w-[45%]">
             <div
               className="wow fadeInUp relative mx-auto mb-12 aspect-[25/15] w-[89%] pr-[60px] text-center lg:m-0"

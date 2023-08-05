@@ -1,3 +1,4 @@
+import FeaturesSection from "@/components/Features/FeaturesSection";
 import FeaturesSectionOne from "@/components/Features/FeaturesSectionOne";
 import FeaturesSectionTwo from "@/components/Features/FeaturesSectionTwo";
 import DemoWebariadne from "@/components/DemoWebariadne";
@@ -31,9 +32,9 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <DemoWebariadne />
-      <FeaturesSectionOne />
-      <FeaturesSectionTwo />
-      
+      <FeaturesSection />
+      {/* <FeaturesSectionOne /> */}
+      {/* <FeaturesSectionTwo /> */}
       {/* <AboutSectionTwo /> */}
       {/* <AboutSectionOne /> */}
       {/* <Pricing /> */}
