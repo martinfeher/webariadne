@@ -32,9 +32,9 @@ const Contact = () => {
     // }
 
     const emailData = {};
-      emailData.fullName = event.target.fullName;
-      emailData.email = event.target.email;
-      emailData.message = event.target.message;
+      // emailData.fullName = event.target.fullName;
+      // emailData.email = event.target.email;
+      // emailData.message = event.target.message;
       
     // fetch("/api/send-email", {
     //   // body: emailData.toString(),
