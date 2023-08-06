@@ -95,7 +95,6 @@ const Contact = () => {
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                         name="fullName"
                         required
-                        maxlength="255"
                       />
                     </div>
                   </div>
@@ -113,7 +112,6 @@ const Contact = () => {
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                         name="email"
                         required
-                        maxlength="512"
                       />
                     </div>
                   </div>
