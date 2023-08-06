@@ -1,4 +1,4 @@
-send-email.tsimport type { NextApiRequest, NextApiResponse } from "next";
+import type { NextApiRequest, NextApiResponse } from "next";
 import { render } from "@react-email/render";
 import WelcomeTemplate from "../../emails/WelcomeTemplate";
 import { sendEmail } from "../../lib/email";
@@ -8,8 +8,8 @@ export default async function handler(
   res: NextApiResponse
 ) {
   await sendEmail({
-    to: "kiran@example.com",
-    subject: "Welcome to NextAPI",
+    to: "mn.feher@gmail.com",
+    subject: "email subject",
     html: render(WelcomeTemplate()),
   });
 

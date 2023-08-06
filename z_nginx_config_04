@@ -1,26 +1,50 @@
-server {
-        listen 80;
-        server_name webariadne.com;
+// pages/subscribe.tsx
+import React, { useState } from "react";
+const SubscribePage = () => {
+  // 👇track form state
+  const [email, setEmail] = useState("");
+  // 👇state to show the result after submitting
+  const [result, setResult] = useState<any>();
+  // 👇 submit handler
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
+    e.preventDefault();
+    // 👇 encode the data to application/x-www-form-urlencoded type
+    const formData = new URLSearchParams();
+    formData.append("email", email);
+    // 👇 call backend endpoint using fetch API
+    fetch("/api/subscribe", {
+      body: formData.toString(),
+      method: "post",
+      headers: {
+        "content-type": "application/x-www-form-urlencoded",
+      },
+    }).then(async (result) => {
+      // 👇 modify the state to show the result
+      setResult(await result.json());
+    });
+  };
 
-        gzip on;
-        gzip_proxied any;
-        gzip_types application/javascript application/x-javascript text/css text/javascript;
-        gzip_comp_level 5;
-        gzip_buffers 16 8k;
-        gzip_min_length 256;
+  return (
+    <div className="container mx-auto">
+      <h1>Sign up to our newsletter!</h1>
+      {/* 👇 wire-up the handleSubmit handler */}
+      <form onSubmit={handleSubmit}>
+        <input
+          placeholder="Enter your email"
+          name="email"
+          // 👇 wire-up the controlled state
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <button type="submit">Sign Up</button>
+      </form>
+      {/* show the data returned by the api */}
+      Result
+      <pre>{JSON.stringify(result, null, 4)}</pre>
+    </div>
+  );
+};
+export default SubscribePage;
 
-        location /_next/static/ {
-                alias /var/www/html/webariadne_com_nextjs/.next/static/;
-                expires 365d;
-                access_log off;
-        }
-
-        location / {
-                proxy_pass http://127.0.0.1:3000;
-                proxy_http_version 1.1;
-                proxy_set_header Upgrade $http_upgrade;
-                proxy_set_header Connection 'upgrade';
-                proxy_set_header Host $host;
-                proxy_cache_bypass $http_upgrade;
-        }
-}

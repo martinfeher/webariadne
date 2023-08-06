@@ -3,6 +3,7 @@ const nextConfig = {
   experimental: {
     // appDir: false,
     appDir: true,
+    fs: 'empty'
   },
 };
 
