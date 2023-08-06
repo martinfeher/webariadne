@@ -37,4 +37,3 @@ yarn-error.log*
 .history/*
 .vscode
 .vscode/*
-.env
