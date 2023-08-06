@@ -39,7 +39,7 @@ export default function Home() {
       {/* <AboutSectionOne /> */}
       {/* <Pricing /> */}
       {/* <Blog /> */}
-      <Contact />
+      {/* <Contact /> */}
     </>
 
   );

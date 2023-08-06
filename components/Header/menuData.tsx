@@ -7,27 +7,27 @@ const menuData: Menu[] = [
     path: "/",
     newTab: false,
   },
+  // {
+  //   id: 2,
+  //   title: "About",
+  //   path: "/about",
+  //   newTab: false,
+  // },
+  // {
+  //   id: 4,
+  //   title: "Blog",
+  //   newTab: false,
+  //   submenu: [
+  //     {
+  //       id: 43,
+  //       title: "Blog Grid Page",
+  //       path: "/blog",
+  //       newTab: false,
+  //     },
+  //   ],
+  // },
   {
     id: 2,
-    title: "About",
-    path: "/about",
-    newTab: false,
-  },
-  {
-    id: 4,
-    title: "Blog",
-    newTab: false,
-    submenu: [
-      {
-        id: 43,
-        title: "Blog Grid Page",
-        path: "/blog",
-        newTab: false,
-      },
-    ],
-  },
-  {
-    id: 42,
     title: "Contact Us",
     path: "/contact-us",
     newTab: false,
