@@ -10,40 +10,9 @@ const Contact = () => {
   async function handleSubmit(event) {
 
     event.preventDefault();
-    // const formData = new FormData(event.target);
-    // formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
-    // const object = Object.fromEntries(formData);
-    // const json = JSON.stringify(object);
-    // const response = await fetch("/api/send-email", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //       Accept: "application/json"
-    //     },
-    //     body: json
-    // });
-    // const result = await response.json();
-    // if (result.success) {
-    //   // console.log(result);
-    // }
-    // type EmailPayload = {
-    //   to: string
-    //   subject: string
-    //   html: string
-    // }
 
     const emailData = {};
 
-      emailData.fullName = event.target.fullName.value;
-      emailData.email = event.target.email.value;
-      emailData.message = event.target.message.value;
-
-      // let rqSendObj = { 
-      //   "fullName": event.target.fullName.value,
-      //   "email": event.target.email.value,
-      //   "message": event.target.message.value,
-      // }
-      
     fetch("/api/contact", {
       method: "post",
       headers: {
