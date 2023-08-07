@@ -19,10 +19,9 @@ export default async function handler(
         await handlePOST(req, res);
         break;
 
-      case "GET":
-        await handleGET(req, res);
-        break;
-
+      // case "GET":
+      //   await handleGET(req, res);
+      //   break;
       // default:
       //   throwMethodNotAllowed(res, method, ["POST", "GET"]);
     }
