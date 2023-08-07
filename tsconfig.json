@@ -23,6 +23,6 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "components/FrontendDemo/index.js", "app/api/route.js"],
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "components/FrontendDemo/index.js", "app/api/route.js", "components/Contact/index.tsx"],
   "exclude": ["node_modules"]
 }

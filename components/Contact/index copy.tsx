@@ -40,25 +40,16 @@ const Contact = () => {
   
   }
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState();
+  // const [name, setName] = useState('');
+  const [email, setEmail] = useState();
+  // const [email, setEmail] = useState('');
+  const [message, setMessage] = useState();
+  // const [message, setMessage] = useState('');
   const [contactFormSubmittedSuccessFullyMessage, setContactFormSubmittedSuccessFullyMessage] = useState(false);
 
-  const handleNameChange = (e) => {
-    setName(e.target.value)
-  }
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value)
-  }
-
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value)
-  }
-
   return (
-    <section id="contact" className="pt-10 pb-16">
+    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
@@ -80,7 +71,6 @@ const Contact = () => {
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                         name="fullName"
                         value={name}
-                        onChange={(e)=>handleNameChange(e)}
                         required
                       />
                     </div>
@@ -99,7 +89,6 @@ const Contact = () => {
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                         name="email"
                         value={email}
-                        onChange={(e)=>handleEmailChange(e)}
                         required
                       />
                     </div>
@@ -115,7 +104,6 @@ const Contact = () => {
                       <textarea
                         name="message"
                         value={message}
-                        onChange={(e)=>handleMessageChange(e)}
                         rows={5}
                         placeholder="Enter your Message"
                         className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
@@ -123,14 +111,14 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="rounded-md bg-primary py-3 px-7 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
+                    <button className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
                       Submit
                     </button>
                   </div>
                 </div>
               </form>
               { contactFormSubmittedSuccessFullyMessage &&
-              (<div className="bg-green-500 text-gray-100 text-[14px] w-[450px] px-4 py-3 mt-[10px] rounded-[4px]">Thank you for contacting webariadne. Your message has been sent successfully.</div>)}
+              (<div className="bg-green-500 text-gray-100 text-[14px] w-[450px] px-4 py-3 mt-[10px] rounded-[4px]">Your message has been submitted sucessfully</div>)}
             </div>
           </div>
           <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
