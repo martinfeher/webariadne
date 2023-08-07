@@ -40,11 +40,8 @@ const Contact = () => {
   }
 
   const [name, setName] = useState<any>('');
-  // const [name, setName] = useState<any | null>('');
   const [email, setEmail] = useState<any>('');
-  // const [email, setEmail] = useState<any | null>('');
   const [message, setMessage] = useState<any>('');
-  // const [message, setMessage] = useState<any | null>('');
 
   const [contactFormSubmittedSuccessFullyMessage, setContactFormSubmittedSuccessFullyMessage] = useState(false);
 
