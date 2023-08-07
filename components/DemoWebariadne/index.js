@@ -9,8 +9,8 @@ function classNames(...classes) {
 
 export default function DemoWebariadne() {
 
-  // const [demoWebariadne, setDemoWebariadne] = useState('frontend');
-  const [demoWebariadne, setDemoWebariadne] = useState('admin');
+  const [demoWebariadne, setDemoWebariadne] = useState('frontend');
+  // const [demoWebariadne, setDemoWebariadne] = useState('admin');
   const [demoSectionActive, setdemoSectionActive] = useState(false);
   const clickDemoFrontendSection = () => {
     setdemoSectionActive(true)
@@ -67,7 +67,8 @@ export default function DemoWebariadne() {
     }
 
   return (
-    <div className="container h-auto min-h-[150px] w-auto xl:w-[1330px] px-[2px] lg:px-4">
+    
+    <div className="container h-auto min-h-[150px] w-auto xl:w-[1330px] px-[2px] lg:px-4 mb-[6px]">
       <Script src="/assets/webariadne/weawp_search_data.js" />
       <Script src="/assets/webariadne/admin/weawp_search.min.js" />
       <Script src="/assets/webariadne/frontend/weawp_search.min.js" />
@@ -79,9 +80,9 @@ export default function DemoWebariadne() {
               <div
                 className={`${
                   demoWebariadne === "frontend"
-                    ? "text-slate-800"
-                    : "text-slate-600"
-                } w-[90px] cursor-pointer rounded-l-[4px] border-b border-l border-r border-t border-gray-300  bg-slate-50 py-[6px] text-center text-[12px] hover:bg-slate-200 hover:text-slate-800`}
+                    ? "bg-slate-500"
+                    : "bg-slate-600"
+                } w-[90px] cursor-pointer rounded-l-[6px] border-b border-l border-r border-t border-gray-300 text-white py-[6px] text-center text-[12px] hover:bg-slate-500`}
                 onClick={() => handleDemoButtonCLick("frontend")}
               >
                 Frontend
@@ -89,9 +90,9 @@ export default function DemoWebariadne() {
               <div
                 className={` ${
                   demoWebariadne === "admin"
-                    ? "text-slate-800"
-                    : "text-slate-600"
-                } w-[90px] cursor-pointer rounded-r-[4px] border-b border-r border-t border-gray-300 bg-slate-50  py-[6px] text-center text-[12px] hover:bg-slate-200 hover:text-slate-800`}
+                  ? "bg-slate-500"
+                  : "bg-slate-600"
+                } w-[90px] cursor-pointer rounded-r-[6px] border-b border-r border-t border-gray-300  text-white py-[6px] text-center text-[12px] hover:bg-slate-500`}
                 onClick={() => handleDemoButtonCLick("admin")}
               >
                 Admin

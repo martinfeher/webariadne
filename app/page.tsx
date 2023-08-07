@@ -19,8 +19,19 @@ import Script from "next/script";
 import { Poppins } from "@next/font/google";
   const poppins = Poppins({
     weight: '400',
-    subsets: ["latin"] });
+    subsets: ["latin"] 
+  });
 
+// import { Roboto } from "@next/font/google";
+// const roboto = Roboto({
+//   weight: '400',
+//   subsets: ['latin'],
+// })
+// import { Lato } from "@next/font/google";
+//   const lato = Lato({
+//     weight: '400',
+//     subsets: ["latin"] 
+//   });
 
 
 // const [demoActive, setdemoActive] = useState('frontend');

@@ -1,4 +1,5 @@
 'use client';
+import React, { useState } from "react";
 import NewsLatterBox from "./NewsLatterBox";
 import nodemailer from "nodemailer"
 import { sendEmail } from "../../lib/email";
@@ -32,45 +33,48 @@ const Contact = () => {
     // }
 
     const emailData = {};
-      // emailData.fullName = event.target.fullName;
-      // emailData.email = event.target.email;
-      // emailData.message = event.target.message;
-      
-    // fetch("/api/send-email", {
-    //   // body: emailData.toString(),
-    //   // method: "post",
-    //   headers: {
-    //     "content-type": "application/x-www-form-urlencoded",
-    //   },
-    // }).then(async (result) => {
-    //     console.log('email sent');
-    //     // let emailResponse = result.json();
-    //   // setResult(await result.json());
-    // });
 
-    fetch("/api/send-email", {
-    // fetch("/api/contact", {
-      // body: emailData.toString(),
-      // method: "post",
+      emailData.fullName = event.target.fullName.value;
+      emailData.email = event.target.email.value;
+      emailData.message = event.target.message.value;
+
+      // let rqSendObj = { 
+      //   "fullName": event.target.fullName.value,
+      //   "email": event.target.email.value,
+      //   "message": event.target.message.value,
+      // }
+      
+    fetch("/api/contact", {
+      method: "post",
       headers: {
-        "content-type": "application/x-www-form-urlencoded",
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
       },
-      
+      body: JSON.stringify({
+        fullName: event.target.fullName.value,
+        email: event.target.email.value,
+        message: event.target.message.value,
+      })
+
     }).then(async (result) => {
-        console.log('email sent');
-        // let emailResponse = result.json();
-      // setResult(await result.json());
+      setName('');
+      setEmail('');
+      setMessage('');
+      setContactFormSubmittedSuccessFullyMessage(true);
+
+      const delayDebounceFn = setTimeout(() => {
+        setContactFormSubmittedSuccessFullyMessage(false);
+      }, 6000)
+      return () => clearTimeout(delayDebounceFn)
+
     });
-
-    // sendEmail({
-    // // await sendEmail({
-    //   to: "mn.feher@gmail.com",
-    //   subject: "email subject",
-    //   html: render(WelcomeTemplate()),
-    // });
-
+  
   }
 
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+  const [contactFormSubmittedSuccessFullyMessage, setContactFormSubmittedSuccessFullyMessage] = useState(false);
 
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
@@ -79,7 +83,7 @@ const Contact = () => {
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div className="wow fadeInUp mb-12 rounded-md bg-primary/[3%] py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s">
-              <form onSubmit={(e) => handleSubmit(e)}>
+              <form onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -94,6 +98,7 @@ const Contact = () => {
                         placeholder="Enter your name"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                         name="fullName"
+                        value={name}
                         required
                       />
                     </div>
@@ -111,6 +116,7 @@ const Contact = () => {
                         placeholder="Enter your email"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                         name="email"
+                        value={email}
                         required
                       />
                     </div>
@@ -125,6 +131,7 @@ const Contact = () => {
                       </label>
                       <textarea
                         name="message"
+                        value={message}
                         rows={5}
                         placeholder="Enter your Message"
                         className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
@@ -138,6 +145,8 @@ const Contact = () => {
                   </div>
                 </div>
               </form>
+              { contactFormSubmittedSuccessFullyMessage &&
+              (<div className="bg-green-500 text-gray-100 text-[14px] w-[450px] px-4 py-3 mt-[10px] rounded-[4px]">Your message has been submitted sucessfully</div>)}
             </div>
           </div>
           <div className="w-full px-4 lg:w-5/12 xl:w-4/12">

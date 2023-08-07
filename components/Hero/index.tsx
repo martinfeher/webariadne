@@ -1,47 +1,45 @@
-import Link from "next/link";
+"use client";
+
 import Image from "next/image";
-// import { useTheme } from "next-themes";
 
 const Hero = () => {
-
-  // useTheme("light");
-
   
   return (
     <>
-      <section className="relative z-10 pt-[20px] pb-[20px] md:pt-[120px] xl:pt-[140px] md:pb-[80px] xl:pb-[90px] mb-[20px]">
+      <section className="relative z-10 mt-[67px] mb-[20px] pb-[20px] pt-[20px] md:pb-[80px] md:pt-[100px] xl:pb-[90px] xl:pt-[110px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s">
-                <h1 className="mb-4 !text-[21px] font-[600] text-gray-700 leading-tight">
-                    WordPress plugin to build search user interface
+                <h1 className="mb-4 !text-[21px] font-[600] leading-tight text-gray-700">
+                  WordPress plugin to build search user interface
                 </h1>
-                <div className="mb-[18px] text-[13px] text-gray-600" >Instant search to help to find relevant website content and information.</div>
+                <div className="mb-[12px] text-[14px] text-gray-600">
+                  Instant search to help to find relevant website content and information
+                </div>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
-                  {/* <div>You can try the plugin here, type "outdooor"</div> */}
-                  {/* <div className="flex flex-col text-start"> */}
                 <div className="flex flex-col text-center">
-                  {/* <div className="flex flex-col justify-start text-start"> */}
-                <div className="mb-[8px] text-[13px] text-gray-600">Customizable user interface for visitors on website <a href="/website-customization" className=" text-gray-400">more information</a></div>
-                  {/* <div className="mb-[8px]">Personalizable to websites <a href="/website-customization" className=" text-gray-400">more information</a></div> */}
+                  <div className="mb-[8px] text-[13px] text-gray-600">
+                    Improving default WordPress search with performant customizable search
+                    {/* Improving default WordPress search with performant customizable live search */}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="absolute top-[60px] right-0"> 
-          {/* <Image
+        {/* <div className="absolute top-[60px] right-0"> 
+          <Image
               src="/images/hero/ariadne_statue_concept_01.jpg"
               alt="ariadne"
               // fill
               width={270}
               height={270}
               className="opacity-30"
-            /> */}
-        </div>
+            />
+        </div> */}
         <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="364"
