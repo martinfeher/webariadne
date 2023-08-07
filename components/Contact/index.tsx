@@ -37,12 +37,15 @@ const Contact = () => {
       return () => clearTimeout(delayDebounceFn)
 
     });
-  
   }
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState<string>('');
+  // const [name, setName] = useState<any | null>('');
+  const [email, setEmail] = useState<string>('');
+  // const [email, setEmail] = useState<any | null>('');
+  const [message, setMessage] = useState<string>('');
+  // const [message, setMessage] = useState<any | null>('');
+
   const [contactFormSubmittedSuccessFullyMessage, setContactFormSubmittedSuccessFullyMessage] = useState(false);
 
   const handleNameChange = (e) => {
