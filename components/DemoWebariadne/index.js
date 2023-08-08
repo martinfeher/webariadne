@@ -9,8 +9,8 @@ function classNames(...classes) {
 
 export default function DemoWebariadne() {
 
-  const [demoWebariadne, setDemoWebariadne] = useState('frontend');
-  // const [demoWebariadne, setDemoWebariadne] = useState('admin');
+  // const [demoWebariadne, setDemoWebariadne] = useState('frontend');
+  const [demoWebariadne, setDemoWebariadne] = useState('admin');
   const [demoSectionActive, setdemoSectionActive] = useState(false);
   const clickDemoFrontendSection = () => {
     setdemoSectionActive(true)
@@ -82,7 +82,7 @@ export default function DemoWebariadne() {
                   demoWebariadne === "frontend"
                     ? "bg-slate-500"
                     : "bg-slate-600"
-                } w-[90px] md:w-[96px] cursor-pointer rounded-l-[6px] border-b border-l border-r border-t border-gray-300 text-white py-[9px] md:py-[7px] text-center text-[12px] hover:bg-sky-700`}
+                } w-[90px] md:w-[96px] cursor-pointer rounded-l-[6px] border-b border-l border-r border-t border-gray-300 text-white py-[9px] md:py-[7px] text-center text-[12px] hover:bg-sky-800`}
                 onClick={() => handleDemoButtonCLick("frontend")}
               >
                 Frontend
@@ -92,7 +92,7 @@ export default function DemoWebariadne() {
                   demoWebariadne === "admin"
                   ? "bg-slate-500"
                   : "bg-slate-600"
-                } w-[90px] md:w-[96px] cursor-pointer rounded-r-[6px] border-b border-r border-tborder-gray-300  text-white py-[9px] md:py-[7px] text-center text-[12px] hover:bg-sky-700`}
+                } w-[90px] md:w-[96px] cursor-pointer rounded-r-[6px] border-b border-r border-t border-gray-300  text-white py-[9px] md:py-[7px] text-center text-[12px] hover:bg-sky-800`}
                 onClick={() => handleDemoButtonCLick("admin")}
               >
                 Admin
@@ -100,18 +100,14 @@ export default function DemoWebariadne() {
             </div>
           </div>
 
-          {/* <div className="flex"> */}
           <div className="flex flex-col lg:flex-row">
             {demoWebariadne === "admin" && (
-                <div className="hidden lg:flex flex-col w-auto lg:w-[170px] pr-[2px] mt-[26px] ">
-                  {/* <div className="flex flex-row lg:flex-col w-auto lg:w-[170px] pr-[2px] mt-[26px] "> */}
+                <div className="hidden lg:flex flex-col !w-[180px] pr-[2px] mt-[26px] ">
                 {demoAdminDescription.map((item, index) => (
                   <div key={index} className="mb-[10px] border border-gray-200 rounded-[8px] cursor-pointer mr-[5px] w-0 md:w-auto">
-                  {/* <div key={index} className="mb-[10px] border border-gray-200 rounded-[8px] cursor-pointer mr-[5px] w-[120px] w-0 md:w-auto"> */}
                     <div className="flex items-center h-[25px] mb-[1px] px-[10px] pt-[6px] pb-[6px] lg:pb-0 text-center lg:text-left" onClick={()=> toggleDescriptionSelectTheme(index)}><div>{item.title}</div></div>
                       {openDescritonSelectTheme[index].descriptionMobileScreenOpen === true && (
                         <div className={`ml-[3px] px-[10px] pt-[0] pb-[6px] text-[12px] text-gray-500 h-auto`}>
-                          {/* <div className={`ml-[3px] px-[10px] pt-[0] pb-[6px] text-[12px] text-gray-500 hidden lg:block text-left ${openDescritonSelectTheme[index].descriptionMobileScreenOpen === true ? '!block' : ''} `}> */}
                           {item.description}
                         </div>
                       )}

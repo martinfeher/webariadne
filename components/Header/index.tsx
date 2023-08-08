@@ -62,7 +62,7 @@ const Header = () => {
                   />
                 </Link>
               </div>
-              <div className="text-[18px]">WebAriadne</div>
+              <div className="text-[19px] text-gray-700 font-[600] cursor-pointer">WebAriadne</div>
             </div>
             <div className="menu-top flex w-full">
             {/* <div className="menu-top flex w-full items-center justify-between px-4"> */}
