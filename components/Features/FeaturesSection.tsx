@@ -137,7 +137,6 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
-
       <section className="py-5">
         <div className="container">
           <div className="m-auto flex max-w-[1040px] flex-wrap items-center justify-center">
