@@ -41,10 +41,10 @@ const Header = () => {
         }`}
       >
         <div className="container">
-          <div className="relative -mx-4 flex items-center justify-between">
+          <div className="relative -mx-4 flex items-center justify-between my-[5px] lg:my-0">
             {/* <div className="w-60 flex items-center max-w-full px-4 mr-12"> */}
-            <div className="w-60 flex items-center max-w-full px-4 xl:mr-12">
-              <div className="relative block w-[40px] h-[40px] max-w-[40px] max-h-[40px] ">
+            <div className="w-60 flex items-center max-w-full pr-4 pl-[7px] mr-[12px]">
+              <div className="relative block w-[40px] h-[40px] max-w-[40px] max-h-[40px] mr-[15px]">
                 <Link
                   href="/"
                   className={`header-logo block w-full ${
@@ -62,7 +62,6 @@ const Header = () => {
                   />
                 </Link>
               </div>
-              
               <div className="text-[18px]">WebAriadne</div>
             </div>
             <div className="menu-top flex w-full">

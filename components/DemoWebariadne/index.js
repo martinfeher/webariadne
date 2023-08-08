@@ -82,7 +82,7 @@ export default function DemoWebariadne() {
                   demoWebariadne === "frontend"
                     ? "bg-slate-500"
                     : "bg-slate-600"
-                } w-[90px] cursor-pointer rounded-l-[6px] border-b border-l border-r border-t border-gray-300 text-white py-[6px] text-center text-[12px] hover:bg-sky-700`}
+                } w-[90px] md:w-[96px] cursor-pointer rounded-l-[6px] border-b border-l border-r border-t border-gray-300 text-white py-[9px] md:py-[7px] text-center text-[12px] hover:bg-sky-700`}
                 onClick={() => handleDemoButtonCLick("frontend")}
               >
                 Frontend
@@ -92,7 +92,7 @@ export default function DemoWebariadne() {
                   demoWebariadne === "admin"
                   ? "bg-slate-500"
                   : "bg-slate-600"
-                } w-[90px] cursor-pointer rounded-r-[6px] border-b border-r border-tborder-gray-300  text-white py-[6px] text-center text-[12px] hover:bg-sky-700`}
+                } w-[90px] md:w-[96px] cursor-pointer rounded-r-[6px] border-b border-r border-tborder-gray-300  text-white py-[9px] md:py-[7px] text-center text-[12px] hover:bg-sky-700`}
                 onClick={() => handleDemoButtonCLick("admin")}
               >
                 Admin
@@ -126,8 +126,8 @@ export default function DemoWebariadne() {
               </div>
             )}
             <div
-              className={`w-full rounded-[5px] xs:rounded-[7px] sm:rounded-[9px] md:rounded-[12px] bg-gray-300 px-[6px] pb-[9px] pt-[9px] sm:px-[18px] sm:pb-[20px] sm:pt-[18px] md:px-[25px] md:pb-[27px] md:pt-[25px]
-                ${demoSectionActive && demoWebariadne === "frontend" ? 'h-[410px]' : demoWebariadne === "admin" ? 'h-[1360px] md:h-[800px]' : 'h-[105px]' }
+              className={`w-full rounded-[5px] xs:rounded-[7px] sm:rounded-[9px] md:rounded-[12px] bg-gray-300 pb-[9px] px-[6px] xs:px-[10px] sm:px-[15px] sm:pb-[20px] md:px-[25px] md:pb-[27px]
+                ${demoSectionActive && demoWebariadne === "frontend" ? 'h-[630px] pt-[17px] md:pt-[25px]' : demoWebariadne === "admin" ? 'h-[1360px] md:h-[800px] pt-[10px] xs:pt-[10px] sm:pt-[15px] md:pt-[25px]' : 'h-[105px] pt-[17px] md:pt-[25px]' }
               `}
             >
               <div
