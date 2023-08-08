@@ -137,6 +137,42 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
+
+      <section className="py-5">
+        <div className="container">
+          <div className="m-auto flex max-w-[1040px] flex-wrap items-center justify-center">
+            <div className="flex w-full justify-end lg:mr-[4%] lg:w-[45%]">
+              <div
+                className="wow fadeInUp relative mx-auto mb-12 aspect-[25/18] w-[95%] max-w-[440px] pr-[60px] text-center lg:m-0"
+                data-wow-delay=".15s"
+              >
+                <Image
+                  src="/images/features/enabling_result_window_content.png"
+                  alt="website search result window"
+                  fill
+                  style={{objectFit: "contain"}}
+                />
+              </div>
+            </div>
+            <div className="w-full px-4 lg:w-[50%]">
+              <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
+                <div className="mb-9">
+                  <h5 className="mb-4 text-[22px] text-gray-700 ">
+                    {/* Customize the search content */}
+
+                  </h5>
+                  <p className="text-base leading-relaxed text-body-color">
+                    {/* The images providing more information about the blog posts, pages, products can be enabled in the admin area. 
+                    The dimensions can be adjusted according to the content of the website. <br />
+                    The categories, attributes, Sku information of the products can be enabled to be displayed in the result cards. */}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 };

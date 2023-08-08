@@ -82,7 +82,7 @@ export default function DemoWebariadne() {
                   demoWebariadne === "frontend"
                     ? "bg-slate-500"
                     : "bg-slate-600"
-                } w-[90px] cursor-pointer rounded-l-[6px] border-b border-l border-r border-t border-gray-300 text-white py-[6px] text-center text-[12px] hover:bg-slate-500`}
+                } w-[90px] cursor-pointer rounded-l-[6px] border-b border-l border-r border-t border-gray-300 text-white py-[6px] text-center text-[12px] hover:bg-sky-700`}
                 onClick={() => handleDemoButtonCLick("frontend")}
               >
                 Frontend
@@ -92,7 +92,7 @@ export default function DemoWebariadne() {
                   demoWebariadne === "admin"
                   ? "bg-slate-500"
                   : "bg-slate-600"
-                } w-[90px] cursor-pointer rounded-r-[6px] border-b border-r border-t border-gray-300  text-white py-[6px] text-center text-[12px] hover:bg-slate-500`}
+                } w-[90px] cursor-pointer rounded-r-[6px] border-b border-r border-tborder-gray-300  text-white py-[6px] text-center text-[12px] hover:bg-sky-700`}
                 onClick={() => handleDemoButtonCLick("admin")}
               >
                 Admin

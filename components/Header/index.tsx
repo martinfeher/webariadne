@@ -57,6 +57,7 @@ const Header = () => {
                   className=""
                 />
               </Link>
+              
               <div className="text-[18px]">WebAriadne</div>
             </div>
             <div className="menu-top flex w-full">
@@ -99,7 +100,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`h-[72px] flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                            className={`h-[72px] flex py-2 text-base text-dark group-hover:text-sky-600 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                           >
                             {menuItem.title}
                           </Link>
@@ -107,7 +108,7 @@ const Header = () => {
                           <>
                             <a
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
+                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-sky-600 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
                             >
                               {menuItem.title}
                               <span className="pl-3">
