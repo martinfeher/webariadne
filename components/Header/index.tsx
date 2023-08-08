@@ -42,21 +42,26 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
+            {/* <div className="w-60 flex items-center max-w-full px-4 mr-12"> */}
             <div className="w-60 flex items-center max-w-full px-4 xl:mr-12">
-              <Link
-                href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                } `}
-              >
-                <Image
-                  src="/images/logo/icon_109_200x200.png"
-                  alt="logo"
-                  width={40}
-                  height={40}
-                  className=""
-                />
-              </Link>
+              <div className="relative block w-[40px] h-[40px] max-w-[40px] max-h-[40px] ">
+                <Link
+                  href="/"
+                  className={`header-logo block w-full ${
+                    sticky ? "py-5 lg:py-2" : "py-8"
+                  } `}
+                >
+                  <Image
+                    src="/images/logo/icon_109_200x200.png"
+                    alt="logo"
+                    className="m-auto left-0"
+                    fill
+                    style={{
+                      right: 'inherit'
+                    }}
+                  />
+                </Link>
+              </div>
               
               <div className="text-[18px]">WebAriadne</div>
             </div>

@@ -23,13 +23,13 @@ const Hero = () => {
                 <div className="flex flex-col text-center">
                   <div className="mb-[8px] text-[13px] text-gray-600">
                     Improving default WordPress search with performant customizable search
-                    {/* Improving default WordPress search with performant customizable live search */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
         {/* <div className="absolute top-[60px] right-0"> 
           <Image
               src="/images/hero/ariadne_statue_concept_01.jpg"
@@ -40,6 +40,7 @@ const Hero = () => {
               className="opacity-30"
             />
         </div> */}
+        
         <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="364"

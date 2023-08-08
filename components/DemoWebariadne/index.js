@@ -126,7 +126,7 @@ export default function DemoWebariadne() {
               </div>
             )}
             <div
-              className={` w-full rounded-[12px] bg-gray-300 px-[25px] pb-[27px] pt-[25px] 
+              className={`w-full rounded-[5px] xs:rounded-[7px] sm:rounded-[9px] md:rounded-[12px] bg-gray-300 px-[6px] pb-[9px] pt-[9px] sm:px-[18px] sm:pb-[20px] sm:pt-[18px] md:px-[25px] md:pb-[27px] md:pt-[25px]
                 ${demoSectionActive && demoWebariadne === "frontend" ? 'h-[410px]' : demoWebariadne === "admin" ? 'h-[1360px] md:h-[800px]' : 'h-[105px]' }
               `}
             >
