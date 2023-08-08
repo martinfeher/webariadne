@@ -18,6 +18,7 @@ const FeaturesSection = () => {
                 />
               </div>
             </div>
+
             <div className="w-full px-4 lg:w-[50%]">
               <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-9">
@@ -32,9 +33,9 @@ const FeaturesSection = () => {
                   You can utilize searching by Sku of the Woocommerce products. */}
                   </p>
                 </div>
-                <div></div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
