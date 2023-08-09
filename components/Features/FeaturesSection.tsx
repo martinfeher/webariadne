@@ -8,7 +8,7 @@ const FeaturesSection = () => {
           <div className="m-auto flex flex-col-reverse lg:flex-row flex-wrap max-w-[1040px] items-center justify-center">
             <div className="flex w-full justify-end lg:mr-[4%] lg:w-[45%]">
               <div
-                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[440px] pr-[60px] text-center lg:m-0"
+                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[540px] pr-0 lg:pr-[60px] text-center lg:m-0"
                 data-wow-delay=".15s">
                 <Image
                   src="/images/features/live_search.gif"
@@ -32,7 +32,7 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
-      <section className="mt-7 lg:mt-8">
+      <section className="mt-7 sm:mt-9 lg:mt-8">
         <div className="container">
           <div className="m-auto flex flex-wrap max-w-[1040px] items-center justify-center">
             <div className="w-full lg:w-[50%] px-4">
@@ -117,7 +117,7 @@ const FeaturesSection = () => {
             </div>
             <div className="flex w-full justify-end lg:mr-[4%] lg:w-[45%]">
               <div
-                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%]  pr-0 lg:pr-[60px] text-center lg:m-0"
+                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[540px] pr-0 lg:pr-[60px] text-center lg:m-0"
                 data-wow-delay=".15s">
                 <Image
                   src="/images/features/duplicate_theme.gif"

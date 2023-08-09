@@ -67,7 +67,7 @@ export default function DemoWebariadne() {
     }
 
   return (
-    <div className="container h-auto min-h-[150px] w-auto xl:w-[1400px] px-[3px] xs:px-[5px] lg:px-4 mb-[6px]">
+    <div className="container h-auto min-h-[150px] w-auto xl:w-[1460px] px-[3px] xs:px-[5px] lg:px-4 mb-[6px]">
       <Script src="/assets/webariadne/weawp_search_data.js" />
       <Script src="/assets/webariadne/admin/weawp_search.min.js" />
       <Script src="/assets/webariadne/frontend/weawp_search.min.js" />
@@ -122,7 +122,7 @@ export default function DemoWebariadne() {
             )}
             <div
               className={`w-full rounded-[5px] xs:rounded-[7px] sm:rounded-[9px] md:rounded-[12px] bg-gray-300 pb-[9px] px-[6px] xs:px-[10px] sm:px-[15px] sm:pb-[20px] md:px-[25px] md:pb-[27px]
-                ${demoSectionActive && demoWebariadne === "frontend" ? 'h-[630px] pt-[17px] md:pt-[25px]' : demoWebariadne === "admin" ? 'h-[1360px] md:h-[800px] pt-[10px] xs:pt-[10px] sm:pt-[15px] md:pt-[25px]' : 'h-[105px] pt-[17px] md:pt-[25px]' }
+                ${demoSectionActive && demoWebariadne === "frontend" ? 'h-[630px] pt-[17px] sm:pt-[25px] md:pt-[25px]' : demoWebariadne === "admin" ? 'h-[1360px] md:h-[800px] pt-[10px] xs:pt-[10px] sm:pt-[15px] md:pt-[25px]' : 'h-[105px] pt-[17px] sm:pt-[25px] md:pt-[25px]' }
               `}
             >
               <div
