@@ -9,7 +9,6 @@ const FeaturesSection = () => {
             <div className="flex w-full justify-end lg:mr-[4%] lg:w-[45%]">
               <div
                 className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[440px] pr-[60px] text-center lg:m-0"
-                // className="wow fadeInUp relative mx-auto mb-0 lg:mb-12 aspect-[25/18] w-[95%] max-w-[440px] pr-[60px] text-center lg:m-0"
                 data-wow-delay=".15s">
                 <Image
                   src="/images/features/live_search.gif"
@@ -21,10 +20,10 @@ const FeaturesSection = () => {
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h5 className="mb-4 text-[19px] md:text-[21px] lg:text-[22px] text-gray-700 ">
+                  <h5 className="mb-[5px] text-[19px] md:text-[21px] lg:text-[22px] text-gray-700 ">
                     Live search with autocomplete function
                   </h5>
-                  <p className="text-[14px] md:text-[15px] lg:text-base leading-relaxed text-body-color">
+                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-body-color">
                     You can utilise the search to find relevant information in the blog posts, pages, woocommerce products by searching in the titles and description.
                   </p>
                 </div>
