@@ -66,8 +66,8 @@ export default function DemoWebariadne() {
       });
     }
 
+
   return (
-    
     <div className="container h-auto min-h-[150px] w-auto xl:w-[1330px] px-[2px] lg:px-4 mb-[6px]">
       <Script src="/assets/webariadne/weawp_search_data.js" />
       <Script src="/assets/webariadne/admin/weawp_search.min.js" />
