@@ -6,24 +6,22 @@ const Hero = () => {
   
   return (
     <>
-      <section className="relative z-10 mt-[67px] mb-[20px] pb-[20px] pt-[20px] md:pb-[80px] md:pt-[100px] xl:pb-[90px] xl:pt-[110px]">
+      <section className="relative z-10 mt-[60px] sm:mt-[60px] mb-[20px] pt-[12px] sm:pt-[25px] md:pt-[40px] xl:pt-[60px] pb-[5px] sm:pb-[20px] md:pb-[40px] xl:pb-[50px] ">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
+            <div className="flex w-full px-4">
               <div
-                className="wow fadeInUp mx-auto max-w-[800px] text-center"
+                className="wow fadeInUp flex flex-col items-center mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s">
-                <h1 className="mb-4 !text-[21px] font-[600] text-gray-700">
+                <h1 className="mb-[8px] sm:mb-[10px] md:mb-4 !text-[17px] sm:!text-[19px] md:!text-[21px] font-[600] text-gray-700">
                   WordPress plugin to build search user interface
                 </h1>
-                <div className="mb-[12px] text-[14px] text-gray-600">
+                <div className="mb-2 md:mb-[10px] text-[13px] md:text-[14px] text-gray-600 w-[80%] sm:w-[90%] md:w-auto">
                   Instant search to help to find relevant website content and information
                 </div>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
-                <div className="flex flex-col text-center">
-                  <div className="mb-[8px] text-[13px] text-gray-600">
-                    Improving default WordPress search with performant customizable search
-                  </div>
+                <div className="mb-[8px] text-[13px] text-gray-600 w-[80%] sm:w-[90%] md:w-auto text-center">
+                  Improving default WordPress search with performant customizable search
                 </div>
               </div>
             </div>
