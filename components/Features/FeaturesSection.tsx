@@ -23,7 +23,7 @@ const FeaturesSection = () => {
                   <h5 className="mb-[5px] text-[19px] md:text-[21px] lg:text-[22px] text-gray-700 ">
                     Live search with autocomplete function
                   </h5>
-                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-body-color">
+                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-gray-600 font-extralight">
                     You can utilise the search to find relevant information in the blog posts, pages, woocommerce products by searching in the titles and description.
                   </p>
                 </div>
@@ -41,7 +41,7 @@ const FeaturesSection = () => {
                   <h5 className="mb-[5px] text-[19px] md:text-[21px] lg:text-[22px] text-gray-700 ">
                     Admin area with customization options
                   </h5>
-                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-body-color">
+                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-gray-600 font-extralight">
                     The admin dashboard contains easy-to-use user interface to customise the search bar. <br />
                     The administrators can adjust the style, typography backgorund and text color to customise it to the website content.
                     You can edit the style to fit it to the mobile screens.
@@ -88,7 +88,7 @@ const FeaturesSection = () => {
                   <h5 className="mb-[5px] text-[19px] md:text-[21px] lg:text-[22px] text-gray-700 ">
                     Customize the search content
                   </h5>
-                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-body-color">
+                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-gray-600 font-extralight">
                     The images providing more information about the blog posts, pages, products can be enabled in the admin area. 
                     The dimensions can be adjusted according to the content of the website. <br />
                     The categories, attributes, Sku information of the products can be enabled to be displayed in the result cards.
@@ -108,7 +108,7 @@ const FeaturesSection = () => {
                   <h5 className="mb-[5px] text-[19px] md:text-[21px] lg:text-[22px] text-gray-700 ">
                     Work with theme copies
                   </h5>
-                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-body-color">
+                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-gray-600 font-extralight">
                    You can work with duplicates of created themes if it is required to keep the original attributes and brainstorm interface ideas. 
                     The themes have assigned specific shortcodes, which can be added to the websites content to display the search interface with the applied theme.
                   </p>
