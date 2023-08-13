@@ -7,27 +7,33 @@ const menuData: Menu[] = [
     path: "/",
     newTab: false,
   },
-    {
-    id: 3,
-    title: "Demo",
-    newTab: false,
-    submenu: [
-      {
-        id: 31,
-        title: "Frontend",
-        path: "/fronted",
-        newTab: false,
-      },
-      {
-        id: 32,
-        title: "Admin",
-        path: "/admin",
-        newTab: false,
-      }
-    ],
-  },
+  //   {
+  //   id: 2,
+  //   title: "Demo",
+  //   newTab: false,
+  //   submenu: [
+  //     {
+  //       id: 21,
+  //       title: "Frontend",
+  //       path: "/fronted",
+  //       newTab: false,
+  //     },
+  //     {
+  //       id: 22,
+  //       title: "Admin",
+  //       path: "/admin",
+  //       newTab: false,
+  //     }
+  //   ],
+  // },
+  // {
+  //   id: 3,
+  //   title: "Download",
+  //   path: "/download",
+  //   newTab: false,
+  // },
   {
-    id: 2,
+    id: 4,
     title: "Contact Us",
     path: "/contact-us",
     newTab: false,
