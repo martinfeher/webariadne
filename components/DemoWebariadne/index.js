@@ -1,7 +1,6 @@
 "use client";
 import { useState } from 'react';
 import Script from "next/script";
-// import { useMediaQuery } from 'react-responsive';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -9,8 +8,8 @@ function classNames(...classes) {
 
 export default function DemoWebariadne() {
 
-  // const [demoWebariadne, setDemoWebariadne] = useState('frontend');
-  const [demoWebariadne, setDemoWebariadne] = useState('admin');
+  const [demoWebariadne, setDemoWebariadne] = useState('frontend');
+  // const [demoWebariadne, setDemoWebariadne] = useState('admin');
   const [demoSectionActive, setdemoSectionActive] = useState(false);
   const clickDemoFrontendSection = () => {
     setdemoSectionActive(true)
@@ -20,7 +19,6 @@ export default function DemoWebariadne() {
     (demoWebariadne === 'admin' && value === 'frontend') && setdemoSectionActive(false)
     setDemoWebariadne(value)
   }
-  // const isTabletOrMobile = useMediaQuery({ maxWidth: settings.loaded ? parseInt(settings.loaded.Responsivity['mobileBP']) : 1224 })
 
   let demoAdminDescription = [
       {
@@ -132,7 +130,7 @@ export default function DemoWebariadne() {
                 } h-[43px]`}
                 onClick={() => clickDemoFrontendSection()}
               ></div>
-              <div id="weawp_search_admin" className={`weawp_search ${demoWebariadne !== "admin" ? "hidden" : ""}`}
+              <div id="weawp_search_admin" className={`weawp_search mb-2 ${demoWebariadne !== "admin" ? "hidden" : ""}`}
               ></div>
             </div>
           </div>

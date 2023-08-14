@@ -3,7 +3,7 @@ import Image from "next/image";
 const FeaturesSection = () => {
   return (
     <div>
-      <section className="mt-7 lg:mt-8">
+      <section className="mt-[30px] lg:mt-8">
         <div className="container">
           <div className="m-auto flex flex-col-reverse lg:flex-row flex-wrap max-w-[1040px] items-center justify-center">
             <div className="flex w-full justify-end lg:mr-[4%] lg:w-[45%]">
@@ -20,10 +20,10 @@ const FeaturesSection = () => {
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h5 className="mb-[5px] text-[19px] md:text-[21px] lg:text-[22px] text-gray-700 ">
+                  <h5 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800 ">
                     Live search with autocomplete function
                   </h5>
-                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-gray-600 font-extralight">
+                  <p className="text-[12px] lg:text-[13px] text-gray-700">
                     You can utilise the search to find relevant information in the blog posts, pages, woocommerce products by searching in the titles and description.
                   </p>
                 </div>
@@ -38,10 +38,10 @@ const FeaturesSection = () => {
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h5 className="mb-[5px] text-[19px] md:text-[21px] lg:text-[22px] text-gray-700 ">
+                  <h5 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800 ">
                     Admin area with customization options
                   </h5>
-                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-gray-600 font-extralight">
+                  <p className="text-[12px] lg:text-[13px] text-gray-700">
                     The admin dashboard contains easy-to-use user interface to customise the search bar. <br />
                     The administrators can adjust the style, typography backgorund and text color to customise it to the website content.
                     You can edit the style to fit it to the mobile screens.
@@ -72,7 +72,7 @@ const FeaturesSection = () => {
           <div className="m-auto flex flex-col-reverse lg:flex-row flex-wrap max-w-[1040px] items-center justify-center">
             <div className="flex w-full justify-end lg:mr-[4%] lg:w-[45%]">
               <div
-                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[410px] pr-[60px] text-center lg:m-0"
+                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-h-[280px] pr-[60px] text-center lg:m-0"
                 data-wow-delay=".15s">
                 <Image
                   src="/images/features/enabling_result_window_content.png"
@@ -85,10 +85,10 @@ const FeaturesSection = () => {
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h5 className="mb-[5px] text-[19px] md:text-[21px] lg:text-[22px] text-gray-700 ">
+                  <h5 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800">
                     Customize the search content
                   </h5>
-                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-gray-600 font-extralight">
+                  <p className="text-[12px] lg:text-[13px] text-gray-700">
                     The images providing more information about the blog posts, pages, products can be enabled in the admin area. 
                     The dimensions can be adjusted according to the content of the website. <br />
                     The categories, attributes, Sku information of the products can be enabled to be displayed in the result cards.
@@ -99,16 +99,16 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
-      <section className="mt-7 lg:mt-8">
+      <section className="mt-7 lg:mt-8 mb-14"> 
         <div className="container">
           <div className="m-auto flex flex-wrap max-w-[1040px] items-center justify-center">
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h5 className="mb-[5px] text-[19px] md:text-[21px] lg:text-[22px] text-gray-700 ">
+                  <h5 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800">
                     Work with theme copies
                   </h5>
-                  <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[24px] text-gray-600 font-extralight">
+                  <p className="text-[12px] lg:text-[13px] text-gray-700">
                    You can work with duplicates of created themes if it is required to keep the original attributes and brainstorm interface ideas. 
                     The themes have assigned specific shortcodes, which can be added to the websites content to display the search interface with the applied theme.
                   </p>
@@ -117,7 +117,7 @@ const FeaturesSection = () => {
             </div>
             <div className="flex w-full justify-end lg:mr-[4%] lg:w-[45%]">
               <div
-                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[385px] pr-0 lg:pr-[60px] text-center lg:m-0"
+                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[325px] pr-0 lg:pr-[60px] text-center lg:m-0"
                 data-wow-delay=".15s">
                 <Image
                   src="/images/features/duplicate_theme.gif"

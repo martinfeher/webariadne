@@ -17,11 +17,13 @@ export default function RootLayout({
   return (
     <html lang="en">
     {/* <html suppressHydrationWarning lang="en"> */}
-      <body className="dark:bg-black">
+      <body>
         <Providers>
-          <Header />
-          {children}
-          <Footer />
+          <div className="min-h-screen flex flex-col justify-between">
+            <Header />
+            {children}
+            <Footer />
+          </div>
           <ScrollToTop />
         </Providers>
       </body>
