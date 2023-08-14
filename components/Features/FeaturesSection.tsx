@@ -8,7 +8,7 @@ const FeaturesSection = () => {
           <div className="m-auto flex flex-col-reverse lg:flex-row flex-wrap max-w-[1040px] items-center justify-center">
             <div className="flex w-full justify-end lg:mr-[4%] lg:w-[45%]">
               <div
-                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[540px] pr-0 lg:pr-[60px] text-center lg:m-0"
+                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[410px] pr-0 lg:pr-[60px] text-center lg:m-0"
                 data-wow-delay=".15s">
                 <Image
                   src="/images/features/live_search.gif"
@@ -72,11 +72,11 @@ const FeaturesSection = () => {
           <div className="m-auto flex flex-col-reverse lg:flex-row flex-wrap max-w-[1040px] items-center justify-center">
             <div className="flex w-full justify-end lg:mr-[4%] lg:w-[45%]">
               <div
-                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[440px] pr-[60px] text-center lg:m-0"
+                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[410px] pr-[60px] text-center lg:m-0"
                 data-wow-delay=".15s">
                 <Image
                   src="/images/features/enabling_result_window_content.png"
-                  alt="website search result window"
+                  alt="search results customization"
                   fill
                   style={{objectFit: "contain"}}
                 />
@@ -117,7 +117,7 @@ const FeaturesSection = () => {
             </div>
             <div className="flex w-full justify-end lg:mr-[4%] lg:w-[45%]">
               <div
-                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[540px] pr-0 lg:pr-[60px] text-center lg:m-0"
+                className="wow fadeInUp relative mx-auto mb-0 aspect-[25/18] w-[95%] max-w-[385px] pr-0 lg:pr-[60px] text-center lg:m-0"
                 data-wow-delay=".15s">
                 <Image
                   src="/images/features/duplicate_theme.gif"
