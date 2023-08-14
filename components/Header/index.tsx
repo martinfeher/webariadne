@@ -42,14 +42,12 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between my-[5px] lg:my-0">
-            <div className="w-60 flex items-center max-w-full pr-4 pl-[7px] mr-[12px]">
-              <div className="relative block w-[40px] h-[40px] max-w-[40px] max-h-[40px] mr-[10px] sm:mr-[15px]">
-                <Link
-                  href="/"
-                  className={`header-logo block w-full ${
+              <div>
+              <Link href="/" className={`header-logo block w-full ${
                     sticky ? "py-5 lg:py-2" : "py-8"
-                  } `}
-                >
+                  } `}>
+              <div className="w-60 flex items-center max-w-full pr-4 pl-[7px] mr-[12px]">
+                <div className="relative block w-[40px] h-[40px] max-w-[40px] max-h-[40px] mr-[10px] sm:mr-[15px]">
                   <Image
                     src="/images/logo/icon_109_200x200.png"
                     alt="logo"
@@ -59,13 +57,12 @@ const Header = () => {
                       right: 'inherit'
                     }}
                   />
-                </Link>
-              </div>
+                </div>
               <div className="mt-[1px] text-[19px] text-gray-600 font-[600] cursor-pointer">WebAriadne</div>
+              </div>
+              </Link>
             </div>
             <div className="menu-top flex w-full">
-            {/* <div className="menu-top flex w-full items-center justify-between px-4"> */}
-            {/* <div className="menu-top flex flex-row w-full items-center justify-between px-4"> */}
               <div>
                 <button
                   onClick={navbarToggleHandler}
