@@ -145,9 +145,7 @@ const Contact = () => {
               (<div className="bg-green-500 text-gray-100 text-[14px] w-auto md:w-[450px] px-4 py-3 mt-[10px] rounded-[4px]">Thank you for contacting webariadne. Your message has been sent successfully.</div>)}
             </div>
           </div>
-          {/* <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
-            <NewsLatterBox />
-          </div> */}
+          
         </div>
       </div>
     </section>

@@ -1,20 +1,9 @@
 import FeaturesSection from "@/components/Features/FeaturesSection";
-import FeaturesSectionOne from "@/components/Features/FeaturesSectionOne";
-import FeaturesSectionTwo from "@/components/Features/FeaturesSectionTwo";
 import DemoWebariadne from "@/components/DemoWebariadne";
-// import AboutSectionOne from "@/components/About/AboutSectionOne";
-// import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/Blog";
-// import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
-import Contact from "@/components/Contact";
-import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-// import Pricing from "@/components/Pricing";
-// import Testimonials from "@/components/Testimonials";
-// import Video from "@/components/Video";
-import Script from "next/script";
-// import { useState } from 'react'
+import NewsLatterBox from "@/components/Contact/NewsLatterBox";
+
 
 import { Poppins } from "@next/font/google";
   const poppins = Poppins({
@@ -43,14 +32,12 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <DemoWebariadne />
-      <FeaturesSection />
-      {/* <FeaturesSectionOne /> */}
-      {/* <FeaturesSectionTwo /> */}
-      {/* <AboutSectionTwo /> */}
-      {/* <AboutSectionOne /> */}
-      {/* <Pricing /> */}
-      {/* <Blog /> */}
-      {/* <Contact /> */}
+      <FeaturesSection /> 
+      {/* <div className="container">
+        <div className="max-w-[540px] flex justify-start">
+          <NewsLatterBox />
+        </div>
+      </div> */}
     </>
 
   );

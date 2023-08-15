@@ -1,4 +1,5 @@
 import Contact from "@/components/Contact";
+import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 
 const ContactPage = () => {
   return (
@@ -12,6 +13,11 @@ const ContactPage = () => {
         </div>
         <Contact />
       </div>
+      {/* <div className="container">
+        <div className="max-w-[540px] flex justify-start">
+          <NewsLatterBox />
+        </div>
+      </div> */}
     </>
   );
 };
