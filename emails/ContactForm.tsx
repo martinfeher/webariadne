@@ -11,7 +11,6 @@ export default function ContactForm(data) {
         <Container style={container}>
           <Text style={heading}>Hello, new message has been submitted using webariadne contact form.</Text>
           <Text style={paragraph}>https://nx.webariadne.com/contact-us</Text>
-          {/* <Text style={paragraph}>https://webariadne.com/contact-us</Text> */}
           <Text style={paragraph}>From: {data.fullName}</Text>
           <Text style={paragraph}>Email: {data.email}</Text>
           <Text style={paragraph}>Message: {data.message}</Text>

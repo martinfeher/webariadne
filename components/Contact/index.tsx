@@ -78,7 +78,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
-                    <div className="mb-8">
+                    <div className="mb-6">
                       <label
                         htmlFor="name"
                         className="mb-3 block text-sm font-medium text-dark"
@@ -97,7 +97,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4 md:w-1/2">
-                    <div className="mb-8">
+                    <div className="mb-6">
                       <label
                         htmlFor="email"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
@@ -116,7 +116,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <div className="mb-8">
+                    <div className="mb-6">
                       <label
                         htmlFor="message"
                         className="mb-3 block text-sm font-medium text-dark"

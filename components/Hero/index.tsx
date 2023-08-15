@@ -13,7 +13,7 @@ const Hero = () => {
               <div
                 className="wow fadeInUp flex flex-col items-center mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s">
-                <h1 className="mb-[8px] sm:mb-[10px] md:mb-4 !text-[17px] sm:!text-[19px] md:!text-[21px] font-[600] text-gray-700">
+                <h1 className="mb-[8px] sm:mb-[10px] md:mb-4 !text-[17px] sm:!text-[18px] md:!text-[19px] font-[600] text-gray-700">
                   WordPress plugin to build search user interface
                 </h1>
                 <div className="mb-[3px] md:mb-[4px] text-[12px] md:text-[13px] text-gray-600 w-[80%] sm:w-[90%] md:w-auto">

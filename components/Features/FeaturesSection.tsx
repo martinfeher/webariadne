@@ -99,7 +99,7 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
-      <section className="mt-7 lg:mt-8 mb-14"> 
+      <section className="mt-7 lg:mt-8 mb-8 md:mb-10 lg:mb-14"> 
         <div className="container">
           <div className="m-auto flex flex-wrap max-w-[1040px] items-center justify-center">
             <div className="w-full lg:w-[50%] px-4">

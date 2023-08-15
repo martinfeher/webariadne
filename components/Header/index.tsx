@@ -43,10 +43,11 @@ const Header = () => {
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between my-[5px] lg:my-0">
               <div>
-              <Link href="/" className={`header-logo block w-full ${
-                    sticky ? "py-5 lg:py-2" : "py-8"
-                  } `}>
-              <div className="w-60 flex items-center max-w-full pr-4 pl-[7px] mr-[12px]">
+              <Link href="/" className={`header-logo block w-full ${ sticky ? "py-[6px]" : "py-[4px]" } `}>
+              {/* <Link href="/" className={`header-logo block w-full ${ sticky ? "py-5 lg:py-2" : "py-5" } `}> */}
+              <div className="flex items-center max-w-full pr-4 pl-[7px] mr-[22px]">
+              {/* <div className="flex items-center max-w-full pr-4 pl-[7px] mr-[12px]"> */}
+              {/* <div className="w-60 flex items-center max-w-full pr-4 pl-[7px] mr-[12px]"> */}
                 <div className="relative block w-[40px] h-[40px] max-w-[40px] max-h-[40px] mr-[10px] sm:mr-[15px]">
                   <Image
                     src="/images/logo/icon_109_200x200.png"
@@ -71,36 +72,36 @@ const Header = () => {
                   className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
                 >
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[24px] bg-gray-600 transition-all duration-300  ${
                       navbarOpen ? " top-[7px] rotate-45" : " "
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[24px] bg-gray-600 transition-all duration-300  ${
                       navbarOpen ? "opacity-0 " : " "
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[24px] bg-gray-600 transition-all duration-300  ${
                       navbarOpen ? " top-[-8px] -rotate-45" : " "
                     }`}
                   />
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white py-4 px-6 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 w-[200px] rounded border-[.5px] border-body-gray-300 bg-white pt-[10px] pb-[4px] px-3 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:space-x-12">
+                  <ul className="block lg:flex lg:space-x-12 min-h-[72px]">
                     {menuData.map((menuItem, index) => (
                       <li key={menuItem.id} className="group relative">
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`h-[72px] flex py-2 text-base text-dark group-hover:text-sky-600 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                            className={`h-[42px] flex py-2 text-[13px] lg:text-[16px] text-gray-700 group-hover:text-sky-600 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                           >
                             {menuItem.title}
                           </Link>
