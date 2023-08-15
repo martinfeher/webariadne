@@ -18,8 +18,7 @@ const Footer = () => {
                 href="/privacy-policy"
                 className="text-body-color hover:text-primary underline"
               >
-                {" "}
-                Privacy Policy{" "}
+                Privacy Policy
               </Link>
             </div>
           </div>
