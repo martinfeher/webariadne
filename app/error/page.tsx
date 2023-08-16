@@ -116,33 +116,22 @@ const ErrorPage = () => {
                         y2="-2.91631"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stopColor="#4A6CF7" stopOpacity="0" />
-                        <stop offset="1" stopColor="#4A6CF7" />
+                        <stop stopColor="#ccccccc" stopOpacity="0" />
+                        <stop offset="1" stopColor="#ccccccc" />
                       </linearGradient>
-                      <radialGradient
-                        id="paint2_radial_116:1137"
-                        cx="0"
-                        cy="0"
-                        r="1"
-                        gradientUnits="userSpaceOnUse"
-                        gradientTransform="translate(227.5 81.5) rotate(90) scale(73.5368)"
-                      >
-                        <stop stopOpacity="0.47" />
-                        <stop offset="1" stopOpacity="0" />
-                      </radialGradient>
                     </defs>
                   </svg>
                 </div>
-                <h3 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
+                <h3 className="mb-4 text-[17px] font-medium text-gray-700 dark:text-white">
                   Sorry, the page can’t be found
                 </h3>
-                <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                <p className="mb-10 text-[14px] font-medium leading-relaxed text-body-color sm:leading-relaxed">
                   The page you were looking for appears to have been moved,
                   deleted or does not exist.
                 </p>
                 <Link
                   href="/"
-                  className="rounded-md bg-primary py-3 px-8 text-base font-bold text-white shadow-signUp duration-300 hover:bg-white hover:text-primary md:px-9 lg:px-8 xl:px-9"
+                  className="rounded-md bg-blue-200 py-3 px-8 text-base text-white shadow-signUp duration-300 md:px-9 lg:px-8 xl:px-9"
                 >
                   Back to Homepage
                 </Link>
