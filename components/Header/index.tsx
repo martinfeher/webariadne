@@ -50,7 +50,7 @@ const Header = () => {
               {/* <div className="w-60 flex items-center max-w-full pr-4 pl-[7px] mr-[12px]"> */}
                 <div className="relative block w-[40px] h-[40px] max-w-[40px] max-h-[40px] mr-[10px] sm:mr-[15px]">
                   <Image
-                    src="/images/logo/icon_109_200x200.png"
+                    src="/images/logo/icon_ua_200x200.png"
                     alt="logo"
                     className="m-auto left-0"
                     fill
