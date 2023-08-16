@@ -13,15 +13,17 @@ const Hero = () => {
               <div
                 className="wow fadeInUp flex flex-col items-center mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s">
-                <h1 className="mb-[8px] sm:mb-[10px] md:mb-4 !text-[17px] sm:!text-[18px] md:!text-[19px] font-[600] text-gray-700">
-                  WordPress plugin to build search user interface
+                <h1 className="mb-[8px] sm:mb-[10px] md:mb-4 !text-[17px] sm:!text-[18px] md:!text-[19px] font-[600] text-gray-600">
+                  WordPress plugin to help visitors to find posts, page, products
+                  {/* WordPress plugin to build search user interface */}
                 </h1>
                 <div className="mb-[3px] md:mb-[4px] text-[12px] md:text-[13px] text-gray-600 w-[80%] sm:w-[90%] md:w-auto">
-                  Instant search to help to find relevant website content and information
+                  Live search to help to find relevant website content and information
                 </div>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"></div>
                 <div className="mb-[4px] text-[13px] text-gray-600 w-[80%] sm:w-[90%] md:w-auto text-center">
-                  Improving default WordPress search with performant customizable search
+                  You can utilise customization properties to fit the search bar, results to your website content
+                  {/* Improving default WordPress search with performant customizable search */}
                 </div>
               </div>
             </div>

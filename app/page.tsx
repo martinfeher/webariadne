@@ -17,9 +17,9 @@ import { Poppins } from "@next/font/google";
 //   });
 
 export const metadata = {
-  title: 'WebAriadne live search plugin for wordpress platform',
-  description: 'Webariadne live website search with autocomplete function,administration zone customization, wordpress plugin',
-  keywords: 'live search, autocomplete search, Wordpress live search plugin, amdinistration zone customization, audio input search',
+  title: 'WebAriadne live search',
+  description: 'WordPress plugin to help visitors to find posts, page, products',
+  keywords: 'live search, user customization, Wordpress plugin, audio search',
   icons: {
     icon: [{ url: '/images/favicon/favicon.ico' }, new URL('/images/favicon/favicon.ico', 'https://nx.webariadne.com')],
     // shortcut: ['/shortcut-icon.png'],
