@@ -1,12 +1,17 @@
 import Contact from "@/components/Contact";
-import NewsLatterBox from "@/components/Contact/NewsLatterBox";
+import Head from 'next/head'
 
 const ContactPage = () => {
   return (
     <>
+      <Head>
+        <title>Contect us | Webariadne live search</title>
+      </Head>
       <div className="mt-[150px]">
         <div className="container">
-          <h2 className="text-[17px] font-[600] text-gray-600 mb-[20px]">Contact Form</h2>
+          <h2 className="mb-[20px] text-[17px] font-[600] text-gray-600">
+            Contact Form
+          </h2>
           {/* <div className="text-[15px] text-gray-500">
               You can leave a message 
           </div> */}
