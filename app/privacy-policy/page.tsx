@@ -1,4 +1,24 @@
 
+export const metadata = {
+  title: 'Privacy policy | WebAriadne live search plugin for wordpress platform',
+  description: 'Webariadne live website search with autocomplete function, with amdinistration zone customization, wordpress plugin',
+  keywords: 'WebAriadne application privacy policy',
+  icons: {
+    icon: [{ url: '/images/favicon/favicon.ico' }, new URL('/images/favicon/favicon.ico', 'https://nx.webariadne.com')],
+    // shortcut: ['/shortcut-icon.png'],
+    apple: [
+      { url: '/images/favicon/apple-touch-icon.png' },
+      { url: '/images/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'apple-touch-icon-precomposed',
+        url: '/images/favicon/android-chrome-192x192.png',
+      },
+    ],
+  },
+}
+
 const PrivacyPolicyPage = () => {
   return (
     <>

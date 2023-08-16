@@ -1,28 +1,36 @@
 import Contact from "@/components/Contact";
-import Head from 'next/head'
+
+export const metadata = {
+  title: 'Contact us | WebAriadne live search plugin for wordpress platform',
+  description: 'Webariadne live website search with autocomplete function, with amdinistration zone customization, wordpress plugin',
+  keywords: 'WebAriadne application contact us',
+  icons: {
+    icon: [{ url: '/images/favicon/favicon.ico' }, new URL('/images/favicon/favicon.ico', 'https://nx.webariadne.com')],
+    // shortcut: ['/shortcut-icon.png'],
+    apple: [
+      { url: '/images/favicon/apple-touch-icon.png' },
+      { url: '/images/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'apple-touch-icon-precomposed',
+        url: '/images/favicon/android-chrome-192x192.png',
+      },
+    ],
+  },
+}
 
 const ContactPage = () => {
   return (
     <>
-      <Head>
-        <title>Contact us | Webariadne live search</title>
-      </Head>
       <div className="mt-[150px]">
         <div className="container">
           <h2 className="mb-[20px] text-[17px] font-[600] text-gray-600">
             Contact Form
           </h2>
-          {/* <div className="text-[15px] text-gray-500">
-              You can leave a message 
-          </div> */}
         </div>
         <Contact />
       </div>
-      {/* <div className="container">
-        <div className="max-w-[540px] flex justify-start">
-          <NewsLatterBox />
-        </div>
-      </div> */}
     </>
   );
 };

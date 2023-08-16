@@ -2,8 +2,6 @@ import FeaturesSection from "@/components/Features/FeaturesSection";
 import DemoWebariadne from "@/components/DemoWebariadne";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Hero from "@/components/Hero";
-import NewsLatterBox from "@/components/Contact/NewsLatterBox";
-import Head from 'next/head'
 
 import { Poppins } from "@next/font/google";
   const poppins = Poppins({
@@ -11,28 +9,37 @@ import { Poppins } from "@next/font/google";
     subsets: ["latin"] 
   });
 
-// import { Roboto } from "@next/font/google";
-// const roboto = Roboto({
-//   weight: '400',
-//   subsets: ['latin'],
-// })
+
 // import { Lato } from "@next/font/google";
 //   const lato = Lato({
 //     weight: '400',
 //     subsets: ["latin"] 
 //   });
 
-// const [demoActive, setdemoActive] = useState('frontend');
-// export const metadata: Metadata = {
-//   description: 'Webariadne live website search with autocomplete function, content customization, Wordpress search plugin',
-// }
+export const metadata = {
+  title: 'WebAriadne live search plugin for wordpress platform',
+  description: 'Webariadne live website search with autocomplete function,administration zone customization, wordpress plugin',
+  keywords: 'live search, autocomplete search, Wordpress live search plugin, amdinistration zone customization, audio input search',
+  icons: {
+    icon: [{ url: '/images/favicon/favicon.ico' }, new URL('/images/favicon/favicon.ico', 'https://nx.webariadne.com')],
+    // shortcut: ['/shortcut-icon.png'],
+    apple: [
+      { url: '/images/favicon/apple-touch-icon.png' },
+      { url: '/images/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'apple-touch-icon-precomposed',
+        url: '/images/favicon/android-chrome-192x192.png',
+      },
+    ],
+  },
+}
+
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Webariadne live search | Wordpress plugin</title>
-      </Head>
       <ScrollUp />
       <Hero />
       <DemoWebariadne />
