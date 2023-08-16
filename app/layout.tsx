@@ -17,6 +17,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Head>
+        <title>WebAriadne live search plugin for wordpress platform</title>
+      </Head>
       <body>
           <Providers>
             <div className="flex min-h-screen flex-col justify-between">
