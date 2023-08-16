@@ -3,7 +3,8 @@ import DemoWebariadne from "@/components/DemoWebariadne";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Hero from "@/components/Hero";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
-
+import Head from 'next/head'
+import type { Metadata } from 'next'
 
 import { Poppins } from "@next/font/google";
   const poppins = Poppins({
@@ -24,21 +25,25 @@ import { Poppins } from "@next/font/google";
 
 
 // const [demoActive, setdemoActive] = useState('frontend');
+// export const metadata: Metadata = {
+//   description: 'Webariadne live website search with autocomplete function, content customization, Wordpress search plugin',
+// }
 
 export default function Home() {
   return (
-
     <>
+      <Head>
+        <title>Webariadne live search | Wordpress plugin</title>
+      </Head>
       <ScrollUp />
       <Hero />
       <DemoWebariadne />
-      <FeaturesSection /> 
+      <FeaturesSection />
       {/* <div className="container">
         <div className="max-w-[540px] flex justify-start">
           <NewsLatterBox />
         </div>
       </div> */}
     </>
-
   );
 }
