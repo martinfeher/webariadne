@@ -5,7 +5,7 @@ const ContactPage = () => {
   return (
     <>
       <Head>
-        <title>Contect us | Webariadne live search</title>
+        <title>Contact us | Webariadne live search</title>
       </Head>
       <div className="mt-[150px]">
         <div className="container">
