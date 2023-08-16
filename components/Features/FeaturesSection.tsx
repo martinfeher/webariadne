@@ -20,9 +20,9 @@ const FeaturesSection = () => {
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h5 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800 ">
+                  <h2 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800 ">
                     Live search with autocomplete function
-                  </h5>
+                  </h2>
                   <p className="text-[12px] lg:text-[13px] text-gray-700">
                     You can utilise the search to find relevant information in the blog posts, pages, woocommerce products by searching in the titles and description.
                   </p>
@@ -38,9 +38,9 @@ const FeaturesSection = () => {
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h5 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800 ">
+                  <h2 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800 ">
                     Admin area with customization options
-                  </h5>
+                  </h2>
                   <p className="text-[12px] lg:text-[13px] text-gray-700">
                     The admin dashboard contains easy-to-use user interface to customise the search bar. <br />
                     The administrators can adjust the style, typography backgorund and text color to customise it to the website content.
@@ -85,9 +85,9 @@ const FeaturesSection = () => {
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h5 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800">
+                  <h2 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800">
                     Customize the search content
-                  </h5>
+                  </h2>
                   <p className="text-[12px] lg:text-[13px] text-gray-700">
                     The images providing more information about the blog posts, pages, products can be enabled in the admin area. 
                     The dimensions can be adjusted according to the content of the website. <br />
@@ -105,9 +105,9 @@ const FeaturesSection = () => {
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h5 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800">
+                  <h2 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800">
                     Work with theme copies
-                  </h5>
+                  </h2>
                   <p className="text-[12px] lg:text-[13px] text-gray-700">
                    You can work with duplicates of created themes if it is required to keep the original attributes and brainstorm interface ideas. 
                     The themes have assigned specific shortcodes, which can be added to the websites content to display the search interface with the applied theme.
