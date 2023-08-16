@@ -4,12 +4,14 @@ import Contact from "@/components/Contact";
 const Download = () => {
   return (
     <>
-      <div className="mt-[150px]">
-        <div className="container">
-        <div>Download</div>
-        <div>Current version</div>
-        <div>Previous versions</div>
-      </div>
+      <div className="mt-[150px] container text-[14px]">
+        <div className="flex">
+          <div className="flex flex-col">
+            <div>Download</div>
+            <div>change log</div>
+          </div>
+          <div>Information</div>
+        </div>
       </div>
     </>
   );
