@@ -6,7 +6,6 @@ import ScrollToTop from "@/components/ScrollToTop";
 import "../styles/weawp_search.min.css";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
-import { useTheme } from "next-themes";
 
 export default function RootLayout({
   children,
@@ -14,18 +13,19 @@ export default function RootLayout({
   children: React.ReactNode;  
 }) {
 
+
   return (
     <html lang="en">
-    {/* <html suppressHydrationWarning lang="en"> */}
+      {/* <html suppressHydrationWarning lang="en"> */}
       <body>
-        <Providers>
-          <div className="min-h-screen flex flex-col justify-between">
-            <Header />
-            {children}
-            <Footer />
-          </div>
-          <ScrollToTop />
-        </Providers>
+          <Providers>
+            <div className="flex min-h-screen flex-col justify-between">
+              <Header />
+              {children}
+              <Footer />
+            </div>
+            <ScrollToTop />
+          </Providers>
       </body>
     </html>
   );
