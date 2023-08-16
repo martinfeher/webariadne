@@ -59,7 +59,7 @@ const Header = () => {
                     }}
                   />
                 </div>
-              <div className="mt-[1px] text-[19px] text-gray-600 font-[600] cursor-pointer">WebAriadne</div>
+              <div className="mt-[1px] text-[19px] text-gray-500 font-[600] cursor-pointer">WebAriadne</div>
               </div>
               </Link>
             </div>

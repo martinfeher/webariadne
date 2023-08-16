@@ -119,7 +119,7 @@ export default function DemoWebariadne() {
               </div>
             )}
             <div
-              className={`w-full rounded-[5px] xs:rounded-[7px] sm:rounded-[9px] md:rounded-[12px] bg-gray-300 pb-[9px] px-[6px] xs:px-[10px] sm:px-[15px] sm:pb-[20px] md:px-[25px] md:pb-[27px]
+              className={`w-full rounded-[5px] xs:rounded-[7px] sm:rounded-[9px] md:rounded-[12px] bg-gray-300 pb-[9px] px-[6px] xs:px-[10px] sm:px-[15px] sm:pb-[20px] md:px-[25px] md:pb-[24px]
                 ${demoSectionActive && demoWebariadne === "frontend" ? 'h-[630px] pt-[17px] sm:pt-[25px] md:pt-[25px]' : demoWebariadne === "admin" ? 'h-[1360px] md:h-[800px] pt-[10px] xs:pt-[10px] sm:pt-[15px] md:pt-[25px]' : 'h-[105px] pt-[17px] sm:pt-[25px] md:pt-[25px]' }
               `}
             >
