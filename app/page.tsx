@@ -18,7 +18,7 @@ import { Poppins } from "@next/font/google";
 
 export const metadata = {
   title: 'WebAriadne live search',
-  description: 'WordPress plugin to help visitors to find posts, page, products',
+  description: 'WordPress search plugin to help visitors to find relevant information in posts, page, products',
   keywords: 'live search, user customization, Wordpress plugin, audio search',
   icons: {
     icon: [{ url: '/images/favicon/favicon.ico' }, new URL('/images/favicon/favicon.ico', 'https://nx.webariadne.com')],

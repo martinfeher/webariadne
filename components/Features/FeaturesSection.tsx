@@ -24,7 +24,7 @@ const FeaturesSection = () => {
                     Live search with autocomplete function
                   </h2>
                   <p className="text-[12px] lg:text-[13px] text-gray-700">
-                    You can utilise the search to find relevant information in the blog posts, pages, woocommerce products by searching in the titles and description.
+                    You can utilize the search to find relevant information in the blog posts, pages, woocommerce products by searching in the titles and description.
                   </p>
                 </div>
               </div>
