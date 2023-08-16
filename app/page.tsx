@@ -4,7 +4,6 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Hero from "@/components/Hero";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 import Head from 'next/head'
-import type { Metadata } from 'next'
 
 import { Poppins } from "@next/font/google";
   const poppins = Poppins({
@@ -22,7 +21,6 @@ import { Poppins } from "@next/font/google";
 //     weight: '400',
 //     subsets: ["latin"] 
 //   });
-
 
 // const [demoActive, setdemoActive] = useState('frontend');
 // export const metadata: Metadata = {
