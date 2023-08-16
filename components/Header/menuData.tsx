@@ -26,12 +26,12 @@ const menuData: Menu[] = [
   //     }
   //   ],
   // },
-  {
-    id: 3,
-    title: "Download",
-    path: "/download",
-    newTab: false,
-  },
+  // {
+  //   id: 3,
+  //   title: "Download",
+  //   path: "/download",
+  //   newTab: false,
+  // },
   {
     id: 4,
     title: "Contact Us",
