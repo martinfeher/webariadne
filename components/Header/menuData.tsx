@@ -6,14 +6,14 @@ const menuData = [
     title: "Features",
     path: "/",
     newTab: false,
-    submenu: null,
+    submenu: [],
   },
   {
     id: 2,
     title: "Contact Us",
     path: "/contact-us",
     newTab: false,
-    submenu: null,
+    submenu: [],
   }
 ];
 
