@@ -38,7 +38,7 @@
     "components/FrontendDemo/index.js",
     "app/api/route.js",
     "components/Contact/index.tsx"
-  ],
+, "components/Header/index.js", "components/Header/menuData.js"  ],
   "exclude": [
     "node_modules"
   ]
