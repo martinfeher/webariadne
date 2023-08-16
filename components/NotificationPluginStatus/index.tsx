@@ -8,18 +8,19 @@ const NotificationPluginStatus = ({ clickCloseNotificationPluginStatus }) => {
     <>
         <div className="z-100 fixed inset-x-0 bottom-0 translate-y-0 scale-100 transform pb-2 opacity-100 transition duration-500 ease-out sm:pb-5">
           <div className="mx-auto max-w-screen-sm px-2 sm:px-4" >
-            <div className="rounded-lg bg-gray-900 p-2 shadow-lg sm:p-[9px]" >
+          {/* <div className="rounded-[9px] bg-green-500 shadow-lg p-[4px] sm:p-[5px] border border-gray-300" > */}
+            <div className="rounded-[9px] bg-blue-200 shadow-lg p-[4px] sm:p-[5px] border border-gray-200" >
               <div className="flex flex-wrap items-center justify-between" >
-                <div className="text-gray-100 text-[13px] ml-[18px]"><a href="/webariadne/plugin/webariadne_wordpress_plugin_beta_v0.91.zip" className="text-sky-500 hover:text-sky-700" download>Beta version</a> of Wordpress plugin is available to download</div>
+                <div className="text-slate-700 text-[13px] ml-[18px]"><a href="/webariadne/plugin/webariadne_wordpress_plugin_beta_v0.91.zip" className="text-sky-800 hover:text-sky-900 hover:underline" download>Beta version</a> of Wordpress plugin is available to be installed</div>
                 <div className="order-2 flex-shrink-0 sm:order-3 sm:ml-2" >
                   <button
                     type="button"
-                    className="-mr-1 flex rounded-md p-2 hover:bg-gray-800 focus:bg-gray-800 focus:outline-none"
+                    className="group -mr-1 flex rounded-[17px] p-[5px]  hover:bg-blue-300 transition duration-200"
                     aria-label="Hide banner"
                     onClick={()=> clickCloseNotificationPluginStatus()}
                   >
                     <svg
-                      className="h-6 w-6 text-white"
+                      className="h-6 w-6 text-white group-hover:text-slate-600 transition duration-200"
                       stroke="currentColor"
                       fill="none"
                       viewBox="0 0 24 24"
