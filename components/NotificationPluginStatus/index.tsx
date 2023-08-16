@@ -11,7 +11,7 @@ const NotificationPluginStatus = ({ clickCloseNotificationPluginStatus }) => {
           {/* <div className="rounded-[9px] bg-green-500 shadow-lg p-[4px] sm:p-[5px] border border-gray-300" > */}
             <div className="rounded-[9px] bg-blue-200 shadow-lg p-[4px] sm:p-[5px] border border-gray-200" >
               <div className="flex flex-wrap items-center justify-between" >
-                <div className="text-slate-700 text-[13px] ml-[18px]"><a href="/webariadne/plugin/webariadne_wordpress_plugin_beta_v0.91.zip" className="text-sky-800 hover:text-sky-900 hover:underline" download>Beta version</a> of Wordpress plugin is available to be installed</div>
+                <div className="text-slate-700 text-[13px] ml-[18px]"><a href="/webariadne/plugin/webariadne_wordpress_plugin_beta_v0.91.zip" className="text-sky-800 hover:text-sky-900 hover:underline" download>Beta version</a> of Wordpress plugin is available for you to be installed</div>
                 <div className="order-2 flex-shrink-0 sm:order-3 sm:ml-2" >
                   <button
                     type="button"
