@@ -2,19 +2,12 @@ import FeaturesSection from "@/components/Features/FeaturesSection";
 import DemoWebariadne from "@/components/DemoWebariadne";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Hero from "@/components/Hero";
-
 import { Poppins } from "@next/font/google";
+
   const poppins = Poppins({
-    weight: '400',
+    weight: "400",
     subsets: ["latin"] 
   });
-
-
-// import { Lato } from "@next/font/google";
-//   const lato = Lato({
-//     weight: '400',
-//     subsets: ["latin"] 
-//   });
 
 export const metadata = {
   title: 'WebAriadne live search',
@@ -22,7 +15,6 @@ export const metadata = {
   keywords: 'live search, user customization, Wordpress plugin, audio search',
   icons: {
     icon: [{ url: '/images/favicon/favicon.ico' }, new URL('/images/favicon/favicon.ico', 'https://nx.webariadne.com')],
-    // shortcut: ['/shortcut-icon.png'],
     apple: [
       { url: '/images/favicon/apple-touch-icon.png' },
       { url: '/images/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },

@@ -5,12 +5,11 @@ import NotificationPluginStatus from "@/components/NotificationPluginStatus";
 import { useState } from "react";
 
 const Footer = () => {
-
 const [openNotificationPluginStatus, setOpenNotificationPluginStatus] = useState(true);
 
- const clickCloseNotificationPluginStatus = () => {
-    setOpenNotificationPluginStatus(false)
-  }
+const clickCloseNotificationPluginStatus = () => {
+  setOpenNotificationPluginStatus(false)
+}
 
   return (
     <>
@@ -26,7 +25,7 @@ const [openNotificationPluginStatus, setOpenNotificationPluginStatus] = useState
         <div className="bg-primary/10 pt-4 pb-3"> 
           <div className="container max-w-[1040px] px-0 lg:px-7 flex justify-between items-center">
             <div className="text-[10px] md:text-[11px] text-gray-400">
-              Copyright ©2023 Created by: Martin Fehér
+              Copyright ©2023 All rights reserved.
             </div>
             <div className="text-[10px] md:text-[11px] text-gray-500">
               <Link
