@@ -4,18 +4,18 @@ import NewsLatterBox from "./NewsLatterBox";
 import nodemailer from "nodemailer"
 import { sendEmail } from "../../lib/email";
 import WelcomeTemplate from "../../emails/WelcomeTemplate";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import { verifyCaptchaAction } from "../Captcha";
+// import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+// import { verifyCaptchaAction } from "../Captcha";
 
 const Contact = () => {
-  const { executeRecaptcha } = useGoogleReCaptcha();
+  // const { executeRecaptcha } = useGoogleReCaptcha();
 
   async function handleSubmit(event) {
 
-    const token = await executeRecaptcha("onSubmit")
-    const verified = await verifyCaptchaAction(token)
-    
-    if (verified) {
+    // const token = await executeRecaptcha("onSubmit")
+    // const verified = await verifyCaptchaAction(token)
+    // if (verified) {
+      
       event.preventDefault();
       const emailData = {};
 
@@ -45,7 +45,7 @@ const Contact = () => {
         return () => clearTimeout(delayDebounceFn)
 
       });
-    }
+    // }
   }
 
   const [name, setName] = useState<any>('');
@@ -152,7 +152,6 @@ const Contact = () => {
               (<div className="bg-green-500 text-gray-100 text-[14px] w-auto md:w-[450px] px-4 py-3 mt-[10px] rounded-[4px]">Thank you for contacting webariadne. Your message has been sent successfully.</div>)}
             </div>
           </div>
-          
         </div>
       </div>
     </section>
