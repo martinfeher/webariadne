@@ -4,41 +4,48 @@ import NewsLatterBox from "./NewsLatterBox";
 import nodemailer from "nodemailer"
 import { sendEmail } from "../../lib/email";
 import WelcomeTemplate from "../../emails/WelcomeTemplate";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import { verifyCaptchaAction } from "../Captcha";
 
 const Contact = () => {
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   async function handleSubmit(event) {
 
-    event.preventDefault();
+    const token = await executeRecaptcha("onSubmit")
+    const verified = await verifyCaptchaAction(token)
+    
+    if (verified) {
+      event.preventDefault();
+      const emailData = {};
 
-    const emailData = {};
+      fetch("/api/contact", {
+        method: "post",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName: event.target.fullName.value,
+          email: event.target.email.value,
+          message: event.target.message.value,
+        })
 
-    fetch("/api/contact", {
-      method: "post",
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        fullName: event.target.fullName.value,
-        email: event.target.email.value,
-        message: event.target.message.value,
-      })
+      }).then(async (result) => {
+        setName('');
+        setEmail('');
+        setMessage('');
+        setContactFormSubmittedSuccessFullyMessage(true);
+        setBtnSubmitText('Sent');
+        setMessageSent(true);
 
-    }).then(async (result) => {
-      setName('');
-      setEmail('');
-      setMessage('');
-      setContactFormSubmittedSuccessFullyMessage(true);
-      setBtnSubmitText('Sent');
-      setMessageSent(true);
+        const delayDebounceFn = setTimeout(() => {
+          setContactFormSubmittedSuccessFullyMessage(false);
+        }, 7000)
+        return () => clearTimeout(delayDebounceFn)
 
-      const delayDebounceFn = setTimeout(() => {
-        setContactFormSubmittedSuccessFullyMessage(false);
-      }, 7000)
-      return () => clearTimeout(delayDebounceFn)
-
-    });
+      });
+    }
   }
 
   const [name, setName] = useState<any>('');

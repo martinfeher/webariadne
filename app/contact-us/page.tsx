@@ -6,7 +6,6 @@ export const metadata = {
   keywords: 'WebAriadne application contact us',
   icons: {
     icon: [{ url: '/images/favicon/favicon.ico' }, new URL('/images/favicon/favicon.ico', 'https://nx.webariadne.com')],
-    // shortcut: ['/shortcut-icon.png'],
     apple: [
       { url: '/images/favicon/apple-touch-icon.png' },
       { url: '/images/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
