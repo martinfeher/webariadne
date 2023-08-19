@@ -27,7 +27,7 @@ const Breadcrumb = ({
                       href="/"
                       className="pr-1 text-base font-medium text-body-color hover:text-primary"
                     >
-                      Home
+                      
                     </Link>
                     <span className="mr-3 block h-2 w-2 rotate-45 border-t-2 border-r-2 border-body-color"></span>
                   </li>
@@ -63,8 +63,8 @@ const Breadcrumb = ({
                   y2="-97.1485"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#4A6CF7" />
-                  <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                  <stop stopColor="#5AACF7" />
+                  <stop offset="1" stopColor="#5AACF7" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
@@ -76,6 +76,7 @@ const Breadcrumb = ({
               viewBox="0 0 628 258"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className=""
             >
               <path
                 opacity="0.1"
@@ -96,8 +97,8 @@ const Breadcrumb = ({
                   y2="37.0429"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#4A6CF7" />
-                  <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                  <stop stopColor="#8ABCF7" />
+                  <stop offset="1" stopColor="#8ABCF7" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint1_linear_0:1"
@@ -107,8 +108,8 @@ const Breadcrumb = ({
                   y2="32.3398"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#4A6CF7" />
-                  <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                  <stop stopColor="#8ABCF7" />
+                  <stop offset="1" stopColor="#8ABCF7" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
