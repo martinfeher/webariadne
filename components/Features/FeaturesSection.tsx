@@ -43,7 +43,7 @@ const FeaturesSection = () => {
                   </h2>
                   <p className="text-[12px] lg:text-[13px] text-gray-700">
                     The admin dashboard contains easy-to-use user interface to customise the search bar. <br />
-                    The administrators can adjust the style, typography backgorund and text color to customise it to the website content.
+                    The administrators can adjust the style, typography backgorund and text color to customize it to the website content.
                     You can edit the style to fit it to the mobile screens.
                   </p>
                 </div>
