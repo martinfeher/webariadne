@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from "react";
-import NewsLatterBox from "./NewsLatterBox";
 import nodemailer from "nodemailer"
 import { sendEmail } from "../../lib/email";
 import WelcomeTemplate from "../../emails/WelcomeTemplate";

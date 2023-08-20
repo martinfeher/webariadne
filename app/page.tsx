@@ -2,6 +2,7 @@ import FeaturesSection from "@/components/Features/FeaturesSection";
 import DemoWebariadne from "@/components/DemoWebariadne";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Hero from "@/components/Hero";
+import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 import { Poppins } from "@next/font/google";
 
   const poppins = Poppins({
