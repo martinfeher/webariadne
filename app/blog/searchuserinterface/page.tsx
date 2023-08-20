@@ -21,7 +21,7 @@ export const metadata = {
   },
 }
 
-const SearchUserInterface = () => {
+const Searchuserinterface = () => {
   return (
     <>
       <Breadcrumb pageName="Search user interface" description="" />
@@ -92,4 +92,4 @@ const SearchUserInterface = () => {
   );
 };
 
-export default SearchUserInterface;
+export default Searchuserinterface;
