@@ -40,7 +40,7 @@ const Blog = () => {
             Well-placed website search is available for users in any situation
             You can put the search on the sidebar or in the website menu to be
             accessible for the visitors if they need a quick access to the user
-            interface. If the visitors don't know the exact path of the links
+            interface. If the visitors don&quot;t know the exact path of the links
             they can use the search to quickly sail to the specific post.
           </div>
           <div className="mb-[12px]">
@@ -57,9 +57,6 @@ const Blog = () => {
                 height={300}
                 className=""
               />
-              {/* <div className="text-[11px] text-gray-500 pl-[20px]">
-                Image, search result window layout full screen
-              </div> */}
             </div>
             <Image
               src="/blog/search-user-interface/design_mobile_search_results.jpg"
