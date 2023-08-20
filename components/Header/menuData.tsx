@@ -17,7 +17,7 @@ const menuData : Menu[] = [
       {
         id: 21,
         title: "Search user interface",
-        path: "/searchuserinterface",
+        path: "/search-user-interface",
         // path: "/search-user-interface",
         newTab: false,
       }
