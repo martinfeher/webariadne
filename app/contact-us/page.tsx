@@ -1,7 +1,7 @@
 import Contact from "@/components/Contact";
 
 export const metadata = {
-  title: 'Contact us | WebAriadne live search plugin for wordpress platform',
+  title: 'Contact us | WebAriadne live search ui',
   description: 'Webariadne live website search with autocomplete function, with amdinistration zone customization, wordpress plugin',
   keywords: 'WebAriadne application contact us',
   icons: {

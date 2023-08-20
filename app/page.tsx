@@ -5,12 +5,12 @@ import Hero from "@/components/Hero";
 import { Poppins } from "@next/font/google";
 
   const poppins = Poppins({
-    weight: "400",
+    weight: ["200", "400"],
     subsets: ["latin"] 
   });
 
 export const metadata = {
-  title: 'WebAriadne live search',
+  title: 'WebAriadne live search ui',
   description: 'WordPress search plugin to help visitors to find relevant information in posts, page, products',
   keywords: 'live search, user customization, Wordpress plugin, audio search',
   icons: {

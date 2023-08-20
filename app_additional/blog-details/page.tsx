@@ -4,6 +4,7 @@ import Image from "next/image";
 
 const BlogDetailsPage = () => {
   return (
+    
     <>
       <section className="pt-[150px] pb-[120px]">
         <div className="container">
@@ -11,21 +12,20 @@ const BlogDetailsPage = () => {
             <div className="w-full px-4 lg:w-8/12">
               <div>
                 <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
-                  10 amazing sites to download stock photos & digital assets for
-                  free
+                  10 amazing sites to download stock photos & digital assets for free
                 </h2>
                 <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
                   <div className="flex flex-wrap items-center">
                     <div className="mr-10 mb-5 flex items-center">
-                      <div className="mr-4">
+                      {/* <div className="mr-4">
                         <div className="relative h-10 w-10 overflow-hidden rounded-full">
                           <Image
-                            src="/images/blog/author-02.png"
+                            src="/images/blog/authors/author01.jpg"
                             alt="author"
                             fill
                           />
                         </div>
-                      </div>
+                      </div> */}
                       <div className="w-full">
                         <h4 className="mb-1 text-base font-medium text-body-color">
                           By

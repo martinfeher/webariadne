@@ -37,3 +37,6 @@ yarn-error.log*
 .history/*
 .vscode
 .vscode/*
+
+# Contentlayer
+.contentlayer

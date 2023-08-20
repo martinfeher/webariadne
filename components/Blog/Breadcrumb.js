@@ -1,11 +1,9 @@
 import Link from "next/link";
+import { AiOutlineHome } from "react-icons/ai"; 
 
 const Breadcrumb = ({
   pageName,
   description,
-}: {
-  pageName: string;
-  description: string;
 }) => {
   return (
     <>
@@ -13,8 +11,8 @@ const Breadcrumb = ({
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 md:w-8/12 lg:w-7/12">
-              <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
-                <h1 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-3xl">
+              <div className="max-w-[570px] mb-4 lg:mb-6">
+                <h1 className="mb-3 text-[20px] text-black">
                   {pageName}
                 </h1>
                 <p className="text-base font-medium leading-relaxed text-body-color">
@@ -24,18 +22,24 @@ const Breadcrumb = ({
             </div>
             <div className="w-full px-4 md:w-4/12 lg:w-5/12">
               <div className="text-end">
-                <ul className="flex items-center md:justify-end">
+                <ul className="flex items-center md:justify-end mr-0 md:mr-9">
                   <li className="flex items-center">
-                    <Link
+                    {/* <Link
                       href="/"
                       className="pr-1 text-base font-medium text-body-color hover:text-primary"
                     >
-                      Home
-                    </Link>
+                      <AiOutlineHome size={15} className="text-slate-400 hover-text-slate-600 mb-[1px]" />
+                    </Link> */}
                     <span className="mr-3 block h-2 w-2 rotate-45 border-t-2 border-r-2 border-body-color"></span>
                   </li>
-                  <li className="text-base font-medium text-primary">
-                    {pageName}
+                  <li className="flex items-center text-[12px] font-medium text-primary">
+                    <Link href="/blog">
+                      blog
+                    </Link>
+                    <span className="mx-3 block h-2 w-2 rotate-45 border-t-2 border-r-2 border-body-color"></span>
+                  </li>
+                  <li className="flex items-center text-[12px] font-medium text-primary">
+                    {pageName.toLowerCase()}
                   </li>
                 </ul>
               </div>
@@ -66,8 +70,8 @@ const Breadcrumb = ({
                   y2="-97.1485"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#4A6CF7" />
-                  <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                  <stop stopColor="#5AACF7" />
+                  <stop offset="1" stopColor="#5AACF7" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
@@ -79,6 +83,7 @@ const Breadcrumb = ({
               viewBox="0 0 628 258"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className=""
             >
               <path
                 opacity="0.1"
@@ -99,8 +104,8 @@ const Breadcrumb = ({
                   y2="37.0429"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#4A6CF7" />
-                  <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                  <stop stopColor="#8ABCF7" />
+                  <stop offset="1" stopColor="#8ABCF7" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint1_linear_0:1"
@@ -110,8 +115,8 @@ const Breadcrumb = ({
                   y2="32.3398"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#4A6CF7" />
-                  <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                  <stop stopColor="#8ABCF7" />
+                  <stop offset="1" stopColor="#8ABCF7" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>

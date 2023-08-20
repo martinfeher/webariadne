@@ -15,6 +15,7 @@ const blogData: Blog[] = [
     },
     tags: [""],
     publishDate: "19.8.2023",
+    path: '/blog/search-user-interface',
   }
 ];
 export default blogData;
