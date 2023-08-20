@@ -40,7 +40,7 @@ const SearchUserInterfacePage = () => {
             Well-placed website search is available for users in any situation
             You can put the search on the sidebar or in the website menu to be
             accessible for the visitors if they need a quick access to the user
-            interface. If the visitors don&quot;t know the exact path of the links
+            interface. If the visitors don&apos;t know the exact path of the links
             they can use the search to quickly sail to the specific post.
           </div>
           <div className="mb-[12px]">
