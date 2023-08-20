@@ -8,7 +8,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
   return (
     <>
       <div
-        className="wow fadeInUp relative overflow-hidden rounded-md bg-white shadow-one dark:bg-dark"
+        className="wow fadeInUp relative overflow-hidden rounded-md bg-white"
         data-wow-delay=".1s"
       >
         <div className="p-3 md:px-6 md:py-6">
@@ -16,7 +16,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
             <h3 className="mb-4 block text-[19px] text-black">
               {title}
             </h3>
-            <p className="mb-3 text-[14px] font-[200] leading-[21px] text-gray-700 border-b border-body-color border-opacity-10">
+            <p className="mb-3 text-[14px] font-[200] leading-[21px] text-gray-700">
               {paragraph}
             </p>
           </Link>

@@ -1,6 +1,7 @@
 import SingleBlog from "@/components/Blog/SingleBlog";
 import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 
 export const metadata = {
   title: 'Blog | WebAriadne live search',
@@ -42,6 +43,11 @@ const Blog = () => {
           </div>
         </div>
       </section>
+      <div className="container mt-[40px]">
+        <div className="max-w-[540px] flex justify-start">
+          <NewsLatterBox />
+        </div>
+      </div>
     </>
   );
 };

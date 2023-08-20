@@ -37,11 +37,9 @@ export default function Home() {
       <Hero />
       <DemoWebariadne />
       <FeaturesSection />
-      {/* <div className="container">
-        <div className="max-w-[540px] flex justify-start">
+        <div>
           <NewsLatterBox />
-        </div>
-      </div> */}
+      </div>
     </>
   );
 }
