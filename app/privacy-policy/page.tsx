@@ -22,7 +22,7 @@ export const metadata = {
 const PrivacyPolicyPage = () => {
   return (
     <>
-      <div className="mt-[100px] mb-[50px]">
+      <div className="mt-[100px] mb-[50px]"> 
          <div className="container text-[11px] text-gray-700 leading-[15px]">
           <h1 className="leading-[30px] text-[15px] mt-[5px]">Privacy Policy for Webariadne</h1>
           <p>At Webariadne, accessible from https://nx.webariadne.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Webariadne and how we use it.</p>
