@@ -69,7 +69,8 @@ const NewsLatterBox = ({mailerLiteApiKey}) => {
       </form>
       <div className="text-[11px] text-gray-400 font-[200]">By signing up to the newsletter you agree to receiving newsletter by email. You can always unsubcribe via the link in the email, <Link href="/privacy-policy">privacy & policy</Link></div>
       <div className="h-[42px]">
-        {displaySubsrciptionMessage && (<div className="w-[380px] px-5 py-[7px] mt-[8px] bg-green-400 text-green-800 text-[12px] rounded-[4px]">You have been successfully subscribed to the newsletter</div>)}
+        {displaySubsrciptionMessage && 
+        (<div className="w-auto md:w-[380px] px-5 py-[7px] mt-[8px] bg-green-400 text-green-800 text-[12px] rounded-[4px]">You have been successfully subscribed to the newsletter</div>)}
       </div>
     </div>
   );
