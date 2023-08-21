@@ -37,6 +37,7 @@ export const metadata = {
 
 export default function Home() {
 
+
   return (
     <>
       <ScrollUp />
@@ -47,7 +48,7 @@ export default function Home() {
           style={{maxWidth:'1100px'}}
         >
           <div className="max-w-[440px]">
-            <NewsLatterBox />
+            <NewsLatterBox mailerLiteApiKey={process.env.MAILERLITE_API_KEY} />
           </div>
       </div>
       {/* <DataProtectionConsent /> */}

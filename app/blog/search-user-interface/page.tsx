@@ -96,7 +96,7 @@ const SearchUserInterfacePage = () => {
           style={{maxWidth:'1450px'}}
         >
           <div className="max-w-[440px]">
-          <NewsLatterBox />
+          <NewsLatterBox mailerLiteApiKey={process.env.MAILERLITE_API_KEY} />
           </div>
       </div>
       </div>

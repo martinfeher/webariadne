@@ -4,10 +4,10 @@ import MailerLite from '@mailerlite/mailerlite-nodejs';
 import React, { useState } from "react";
 import Link from "next/link";
 
-const NewsLatterBox = () => {
+const NewsLatterBox = ({mailerLiteApiKey}) => {
 
   const mailerlite = new MailerLite({
-    api_key: process.env.MAILERLITE_API_KEY
+    api_key: mailerLiteApiKey
   });
 
   const handleSubscribe = () => {
@@ -16,9 +16,9 @@ const NewsLatterBox = () => {
     const params = {
       email: email,
       fields: {},
-      groups: ["97056613509105370"], // 97056613509105370 group id of nx.webariadne.com
+      groups: ["97056613509105370"],
       status: "active",
-      // subscribed_at: null, // yyyy-MM-dd HH:mm:ss
+      subscribed_at: null, // yyyy-MM-dd HH:mm:ss
       ip_address: null,
       opted_in_at: null, // yyyy-MM-dd HH:mm:ss
       optin_ip: null,
