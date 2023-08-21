@@ -60,11 +60,13 @@ const NewsLatterBox = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <input
-          value={subscribeBtnText}
-          className="duration-80 mb-3 w-[114px] cursor-pointer rounded-[5px] border border-transparent bg-primary py-[6px] text-center text-[11px] text-white outline-none transition ease-in-out hover:bg-opacity-80"
-          onClick={()=> handleSubscribe()} 
-        />
+        <div className="mb-3">
+          <input
+            value={subscribeBtnText}
+            className="duration-80 -mb-[1px] w-[114px] cursor-pointer rounded-[5px] border border-transparent bg-primary py-[6px] text-center text-[11px] text-white outline-none transition ease-in-out hover:bg-opacity-80"
+            onClick={()=> handleSubscribe()} 
+          />
+        </div>
       </form>
       <div className="text-[11px] text-gray-400 font-[200]">By signing up to the newsletter you agree to receiving newsletter by email. You can always unsubcribe via the link in the email, <Link href="/privacy-policy">privacy & policy</Link></div>
       <div className="h-[42px]">

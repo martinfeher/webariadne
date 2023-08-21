@@ -45,7 +45,7 @@ const Blog = () => {
       </section>
       <div className="mt-[40px] container">
         <div className="relative flex justify-start z-10 rounded-md pl-2 xl:pl-5 pr-7 sm:pr-8 xl:pr-12 pb-1 pt-2 md:pt-4"
-          style={{maxWidth:'440px'}}
+          style={{maxWidth:'480px'}}
         >
           <NewsLatterBox />
         </div>

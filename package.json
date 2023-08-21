@@ -19,6 +19,7 @@
     "@react-email/section": "0.0.9",
     "@react-email/text": "0.0.5",
     "axios": "^1.4.0",
+    "cookies-next": "^2.1.2",
     "eslint": "8.33.0",
     "eslint-config-next": "^13.4.16",
     "i18next": "^23.4.4",

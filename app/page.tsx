@@ -3,8 +3,8 @@ import DemoWebariadne from "@/components/DemoWebariadne";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Hero from "@/components/Hero";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
+// import DataProtectionConsent from "@/components/DataProtectionConsent";
 import { Poppins } from "@next/font/google";
-
 
 
   const poppins = Poppins({
@@ -50,6 +50,7 @@ export default function Home() {
             <NewsLatterBox />
           </div>
       </div>
+      {/* <DataProtectionConsent /> */}
     </>
   );
 }
