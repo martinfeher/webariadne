@@ -14,7 +14,7 @@ const clickCloseNotificationPluginStatus = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp relative pt-8"
+        className="wow fadeInUp relative pt-1"
         data-wow-delay=".1s"
       >
         {openNotificationPluginStatus && (
