@@ -1,6 +1,8 @@
 import Breadcrumb from "@/components/Blog/Breadcrumb";
 import Image from "next/image";
-import Link from "next/link";
+import NewsLatterBox from "@/components/Contact/NewsLatterBox";
+
+
 
 export const metadata = {
   title: 'Search user interface | WebAriadne blog',
@@ -88,6 +90,16 @@ const SearchUserInterfacePage = () => {
           </div>
         </div>
       </section>
+
+      <div className="container">
+        <div className="relative m-auto z-10 rounded-md pl-3 pr-7 sm:pr-8 xl:pr-12 pb-1 pt-10 md:pt-[52px]"
+          style={{maxWidth:'1450px'}}
+        >
+          <div className="max-w-[440px]">
+          <NewsLatterBox />
+          </div>
+      </div>
+      </div>
     </>
   );
 };
