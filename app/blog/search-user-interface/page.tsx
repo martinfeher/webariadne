@@ -3,11 +3,11 @@ import Image from "next/image";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 
 
-
 export const metadata = {
   title: 'Search user interface | WebAriadne blog',
   description: 'Search user interface article',
   keywords: 'blog post WebAriadne, search user interface',
+  // opengraph-image: 'blog post WebAriadne, search user interface',
   icons: {
     icon: [{ url: '/images/favicon/favicon.ico' }, new URL('/images/favicon/favicon.ico', 'https://nx.webariadne.com')],
     apple: [
@@ -42,8 +42,8 @@ const SearchUserInterfacePage = () => {
             Well-placed website search is available for users in any situation
             You can put the search on the sidebar or in the website menu to be
             accessible for the visitors if they need a quick access to the user
-            interface. If the visitors don&apos;t know the exact path of the links
-            they can use the search to quickly sail to the specific post.
+            interface. If the visitors don&apos;t know the exact path of the
+            links they can use the search to quickly sail to the specific post.
           </div>
           <div className="mb-[12px]">
             If your website is using images to illustrate the posts, you can use
@@ -90,15 +90,15 @@ const SearchUserInterfacePage = () => {
           </div>
         </div>
       </section>
-
       <div className="container">
-        <div className="relative m-auto z-10 rounded-md pl-3 pr-7 sm:pr-8 xl:pr-12 pb-1 pt-10 md:pt-[52px]"
-          style={{maxWidth:'1450px'}}
+        <div
+          className="relative z-10 m-auto rounded-md pb-1 pl-3 pr-7 pt-10 sm:pr-8 md:pt-[52px] xl:pr-12"
+          style={{ maxWidth: "1450px" }}
         >
           <div className="max-w-[440px]">
-          <NewsLatterBox mailerLiteApiKey={process.env.MAILERLITE_API_KEY} />
+            <NewsLatterBox mailerLiteApiKey={process.env.MAILERLITE_API_KEY} />
           </div>
-      </div>
+        </div>
       </div>
     </>
   );

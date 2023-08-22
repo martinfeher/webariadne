@@ -8,6 +8,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  
   // i18n: {
   //   // These are all the locales you want to support in
   //   // your application
