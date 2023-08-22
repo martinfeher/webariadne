@@ -27,7 +27,7 @@ const clickCloseNotificationPluginStatus = () => {
             <div className="text-[10px] md:text-[11px] text-gray-400">
               Copyright ©2023 All rights reserved.
             </div>
-            <div className="text-[11px]"><span style={{color: '#ede047'}}>#Support</span><span className="text-sky-300">Ukraine</span></div>
+            <div className="text-[11px] text-sky-300"><span style={{color: '#ede047'}} className="opacity-90">#Support</span><span className="text-sky-300">Ukraine</span></div>
             <div className="text-[10px] md:text-[11px] text-gray-500">
               <Link
                 href="/privacy-policy"
