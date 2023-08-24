@@ -45,7 +45,7 @@ const Header = () => {
               <div>
               <Link href="/" className={`header-logo block w-full ${ sticky ? "py-[6px]" : "py-[4px]" } `}>
               <div className="flex items-center max-w-full pr-4 pl-[7px] mr-[22px]">
-                <div className="relative block w-[40px] h-[40px] max-w-[40px] max-h-[40px] mr-[10px] sm:mr-[15px]">
+                <div className="relative block w-[38px] h-[40px] max-w-[38px] max-h-[40px] mr-[8px] sm:mr-[10px]">
                   <Image
                     src="/images/logo/icon_ua_200x200.png"
                     alt="logo"
@@ -56,7 +56,7 @@ const Header = () => {
                     }}
                   />
                 </div>
-              <div className="mt-[1px] text-[19px] text-gray-500 font-[600] cursor-pointer">WebAriadne</div>
+              <div className="mt-[1px] mb-[3px] text-[19px] text-gray-500 font-[600] cursor-pointer">WebAriadne</div>
               </div>
               </Link>
             </div>
