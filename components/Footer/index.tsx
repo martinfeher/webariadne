@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import NotificationPluginStatus from "@/components/NotificationPluginStatus";
+import DataProtectionConsent from "@/components/DataProtectionConsent";
 
 import { useState } from "react";
 
@@ -17,6 +18,7 @@ const clickCloseNotificationPluginStatus = () => {
         className="wow fadeInUp relative pt-1"
         data-wow-delay=".1s"
       >
+        <DataProtectionConsent />
         {openNotificationPluginStatus && (
           <div>
             <NotificationPluginStatus clickCloseNotificationPluginStatus={clickCloseNotificationPluginStatus} />

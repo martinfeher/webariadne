@@ -2,30 +2,29 @@
 import Script from "next/script";
 import { CookiesProvider, useCookies } from "react-cookie";
 const GoogleAnalytics = ({ GA_TRACKING_ID }: { GA_TRACKING_ID: string }) => {
+
 const [cookies, setCookie, removeCookie] = useCookies(['cookiesConsent']);
+
 // console.log('cookies');
 // console.log(cookies);
 // console.log(cookies.cookiesConsent );
 
+
   return (
     <>
-      {(cookies && cookies.cookiesConsent == true) && (
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          strategy="afterInteractive"
-        />
-      )}
-      {(cookies && cookies.cookiesConsent == true) && (
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
         window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', '${GA_TRACKING_ID}');
         `}
-        </Script>
-      )}
+      </Script>
     </>
   );
 };

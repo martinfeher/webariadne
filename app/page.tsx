@@ -3,7 +3,6 @@ import DemoWebariadne from "@/components/DemoWebariadne";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Hero from "@/components/Hero";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
-// import DataProtectionConsent from "@/components/DataProtectionConsent";
 import { Poppins } from "@next/font/google";
 import Head from 'next/head'
 import Script from 'next/script'
@@ -49,7 +48,7 @@ export default function Home() {
             <NewsLatterBox mailerLiteApiKey={process.env.MAILERLITE_API_KEY} />
           </div>
       </div>
-      {/* <DataProtectionConsent /> */}
+      
     </>
   );
 }

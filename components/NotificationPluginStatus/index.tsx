@@ -6,7 +6,7 @@ const NotificationPluginStatus = ({ clickCloseNotificationPluginStatus }) => {
 
   return (
     <>
-        <div className="z-100 fixed inset-x-0 bottom-0 translate-y-0 scale-100 transform pb-2 opacity-100 transition duration-500 ease-out sm:pb-5">
+        <div className="z-30 fixed inset-x-0 bottom-0 translate-y-0 scale-100 transform pb-2 opacity-100 transition duration-500 ease-out sm:pb-5">
           <div className="mx-auto max-w-screen-sm px-2 sm:px-4" >
           {/* <div className="rounded-[9px] bg-green-500 shadow-lg p-[4px] sm:p-[5px] border border-gray-300" > */}
             <div className="rounded-[9px] bg-blue-200 shadow-lg border border-gray-200" >
