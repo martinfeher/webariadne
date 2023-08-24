@@ -20,7 +20,7 @@ const FeaturesSection = () => {
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h2 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800 ">
+                  <h2 className="mb-[5px] text-[15px] md:text-[16px] lg:text-[18px] text-gray-800 ">
                     Live search with autocomplete function
                   </h2>
                   <p className="text-[12px] lg:text-[13px] text-gray-700">
@@ -38,7 +38,7 @@ const FeaturesSection = () => {
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h2 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800 ">
+                  <h2 className="mb-[5px] text-[15px] md:text-[16px] lg:text-[18px] text-gray-800 ">
                     Admin area with customization options
                   </h2>
                   <p className="text-[12px] lg:text-[13px] text-gray-700">
@@ -85,7 +85,7 @@ const FeaturesSection = () => {
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h2 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800">
+                  <h2 className="mb-[5px] text-[15px] md:text-[16px] lg:text-[18px] text-gray-800">
                     Customize the search content
                   </h2>
                   <p className="text-[12px] lg:text-[13px] text-gray-700">
@@ -105,7 +105,7 @@ const FeaturesSection = () => {
             <div className="w-full lg:w-[50%] px-4">
               <div className="wow fadeInUp max-w-auto lg:max-w-[470px]" data-wow-delay=".2s">
                 <div className="mb-6 lg:mb-9">
-                  <h2 className="mb-[5px] text-[14px] md:text-[16px] lg:text-[18px] text-gray-800">
+                  <h2 className="mb-[5px] text-[15px] md:text-[16px] lg:text-[18px] text-gray-800">
                     Work with theme copies
                   </h2>
                   <p className="text-[12px] lg:text-[13px] text-gray-700">
