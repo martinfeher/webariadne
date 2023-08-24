@@ -4,8 +4,8 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Hero from "@/components/Hero";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 import { Poppins } from "@next/font/google";
-import Head from 'next/head'
-import Script from 'next/script'
+// import { useTranslation } from 'next-i18next';
+// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
   const poppins = Poppins({
     weight: '200',
@@ -33,7 +33,8 @@ export const metadata = {
   },
 }
 
-export default function Home() {
+export default function Home({data, locale}) {
+  // const { t } = useTranslation();
 
   return (
     <>
@@ -52,3 +53,20 @@ export default function Home() {
     </>
   );
 }
+
+// export const getServerSideProps = async (context) => {
+//   const { locale } = context;
+//   const res = await fetch(`http://localhost:3006/${locale}`);
+//   const data = await res.json();
+
+//   return {
+//     props: {
+
+//       // Spread the returned object into our `props` to expose
+//       // them to our component during SSR.
+//       ...(await serverSideTranslations(locale, ['common'])),
+
+//       data,
+//     },
+//   };
+// };

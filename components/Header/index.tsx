@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import menuData from "./menuData";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -142,22 +143,11 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
-                {/* <Link
-                  href="/signin"
-                  className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70 dark:text-white md:block"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  href="/signup"
-                  className="ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Sign Up
-                </Link> */}
-                <div>
+              {/* <div className="flex items-center justify-end pr-16 lg:pr-0">
+                <div className="ml-4">
+                  <LanguageSwitcher />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
