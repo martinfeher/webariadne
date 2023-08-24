@@ -19,6 +19,7 @@ const DataProtectionConsent = (props) => {
   const acceptCookie = () => {
     setShowConsent(true);
     setCookie("cookiesConsent", "true", {});
+    window.location.reload(); // reload page
   };
 
   if (showConsent) {
