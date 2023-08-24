@@ -5,7 +5,8 @@ import Hero from "@/components/Hero";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 // import DataProtectionConsent from "@/components/DataProtectionConsent";
 import { Poppins } from "@next/font/google";
-
+import Head from 'next/head'
+import Script from 'next/script'
 
   const poppins = Poppins({
     weight: '200',
@@ -15,7 +16,6 @@ import { Poppins } from "@next/font/google";
   });
 
 export const metadata = {
-
   title: 'WebAriadne live search ui',
   description: 'WordPress search plugin to help visitors to find relevant information in a quick manner',
   keywords: 'live search, user customization, Wordpress plugin, audio search',
@@ -34,9 +34,7 @@ export const metadata = {
   },
 }
 
-
 export default function Home() {
-
 
   return (
     <>

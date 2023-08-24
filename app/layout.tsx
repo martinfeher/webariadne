@@ -6,7 +6,9 @@ import ScrollToTop from "@/components/ScrollToTop";
 import "../styles/weawp_search.min.css";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
-import Head from 'next/head'
+import Head from 'next/head';
+import Script from 'next/script';
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export default function RootLayout({
   children,
@@ -16,9 +18,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
-        <title>WebAriadne live search plugin for wordpress platform</title>
-      </Head>
+      <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
       <body>
           <Providers>
             <div className="flex min-h-screen flex-col justify-between">
