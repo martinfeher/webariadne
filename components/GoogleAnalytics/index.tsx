@@ -1,21 +1,24 @@
 "use client";
 import Script from "next/script";
-import { CookiesProvider, useCookies } from "react-cookie";
+import React, { useState, useEffect } from "react";
+import { hasCookie, setCookie } from "cookies-next";
 const GoogleAnalytics = ({ GA_TRACKING_ID }: { GA_TRACKING_ID: string }) => {
-const [cookies, setCookie, removeCookie] = useCookies(['cookiesConsent']);
-// console.log('cookies');
-// console.log(cookies);
-// console.log(cookies.cookiesConsent );
+
+  useEffect(() => {
+    setCookiesConsent(hasCookie("cookiesConsent"));
+  }, []);
+
+  const [cookiesConsent, setCookiesConsent] = useState(false);
 
   return (
     <>
-      {(cookies && cookies.cookiesConsent == true) && (
+      {cookiesConsent && cookiesConsent && (
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
           strategy="afterInteractive"
         />
       )}
-      {(cookies && cookies.cookiesConsent == true) && (
+      {cookiesConsent && cookiesConsent && (
         <Script id="google-analytics" strategy="afterInteractive">
           {`
         window.dataLayer = window.dataLayer || [];
