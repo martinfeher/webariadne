@@ -29,7 +29,7 @@ const DataProtectionConsent = (props) => {
     <div>
       {displayCookieSection && (
         <div className="fixed z-40">
-          <div className="fixed bottom-0 left-0 right-0 flex items-center justify-end bg-gray-100 px-4 py-[14px]">
+          <div className="fixed bottom-0 left-0 right-0 flex items-center justify-end bg-gray-100 px-4 py-[16px]">
             <span className="mr-16 text-[13px] text-gray-800">
               This website uses cookies to improve user experience and google
               analytics. By using our website you consent to all cookies in
