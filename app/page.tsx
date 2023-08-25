@@ -34,7 +34,6 @@ export const metadata = {
 }
 
 export default function Home({data, locale}) {
-  // const { t } = useTranslation();
 
   return (
     <>
@@ -53,20 +52,3 @@ export default function Home({data, locale}) {
     </>
   );
 }
-
-// export const getServerSideProps = async (context) => {
-//   const { locale } = context;
-//   const res = await fetch(`http://localhost:3006/${locale}`);
-//   const data = await res.json();
-
-//   return {
-//     props: {
-
-//       // Spread the returned object into our `props` to expose
-//       // them to our component during SSR.
-//       ...(await serverSideTranslations(locale, ['common'])),
-
-//       data,
-//     },
-//   };
-// };
