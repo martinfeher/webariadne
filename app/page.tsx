@@ -35,7 +35,7 @@ export default function Home({data, locale}) {
 
   return (
     <>
-      <Script type="application/ld+json">
+      <Script id="webariadne_homepage_structured_markup" type="application/ld+json"> 
         {`
           "@context": "https://schema.org/",
           "@type": "Page",
