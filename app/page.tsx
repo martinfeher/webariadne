@@ -36,32 +36,30 @@ export default function Home({data, locale}) {
 
   return (
     <>
-      <div>
-        <Head>
-          <Script
-            id="webariadne_homepage_structured_markup"
-            type="application/ld+json"
-          >
-            {`
-          "@context": "https://schema.org/",
-          "@type": "Page",
-          "name": "WebAriadne live search ui",
-          "datePublished": "2023-08-16",
-          "description": "WordPress search plugin to help visitors to find relevant information in a quick manner.",
-        `}
-          </Script>
-        </Head>
-        <ScrollUp />
-        <Hero />
-        <DemoWebariadne />
-        <FeaturesSection />
-        <div
-          className="container relative z-10 m-auto rounded-md px-7 pb-1 pt-6 sm:px-8 md:pt-10 xl:px-12"
-          style={{ maxWidth: "1100px" }}
+      <head>
+        <Script
+          id="webariadne_homepage_structured_markup"
+          type="application/ld+json"
         >
-          <div className="max-w-[440px]">
-            <NewsLatterBox mailerLiteApiKey={process.env.MAILERLITE_API_KEY} />
-          </div>
+          {`
+            "@context": "https://schema.org/",
+            "@type": "Page",
+            "name": "WebAriadne live search ui",
+            "datePublished": "2023-08-16",
+            "description": "WordPress search plugin to help visitors to find relevant information in a quick manner.",
+          `}
+        </Script>
+      </head>
+      <ScrollUp />
+      <Hero />
+      <DemoWebariadne />
+      <FeaturesSection />
+      <div
+        className="container relative z-10 m-auto rounded-md px-7 pb-1 pt-6 sm:px-8 md:pt-10 xl:px-12"
+        style={{ maxWidth: "1100px" }}
+      >
+        <div className="max-w-[440px]">
+          <NewsLatterBox mailerLiteApiKey={process.env.MAILERLITE_API_KEY} />
         </div>
       </div>
     </>
