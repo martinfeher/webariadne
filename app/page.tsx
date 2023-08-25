@@ -4,12 +4,10 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Hero from "@/components/Hero";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 import { Poppins } from "@next/font/google";
-// import { useTranslation } from 'next-i18next';
-// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Script from "next/script";
 
   const poppins = Poppins({
     weight: '200',
-    // weight: ["200", "400"],
     style: ['normal', 'italic'],
     subsets: ["latin"] 
   });
@@ -33,22 +31,31 @@ export const metadata = {
   },
 }
 
-export default function Home({data, locale}) {
+export default function Home({data, locale}) {  
 
   return (
     <>
+      <Script type="application/ld+json">
+        {`
+          "@context": "https://schema.org/",
+          "@type": "Page",
+          "name": "WebAriadne live search ui",
+          "datePublished": "2023-08-16",
+          "description": "WordPress search plugin to help visitors to find relevant information in a quick manner.",
+        `}
+      </Script>
       <ScrollUp />
       <Hero />
       <DemoWebariadne />
       <FeaturesSection />
-        <div className="container relative m-auto z-10 rounded-md px-7 sm:px-8 xl:px-12 pb-1 pt-6 md:pt-10"
-          style={{maxWidth:'1100px'}}
-        >
-          <div className="max-w-[440px]">
-            <NewsLatterBox mailerLiteApiKey={process.env.MAILERLITE_API_KEY} />
-          </div>
+      <div
+        className="container relative z-10 m-auto rounded-md px-7 pb-1 pt-6 sm:px-8 md:pt-10 xl:px-12"
+        style={{ maxWidth: "1100px" }}
+      >
+        <div className="max-w-[440px]">
+          <NewsLatterBox mailerLiteApiKey={process.env.MAILERLITE_API_KEY} />
+        </div>
       </div>
-      
     </>
   );
 }
