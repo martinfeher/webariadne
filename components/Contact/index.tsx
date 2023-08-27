@@ -1,19 +1,9 @@
 'use client';
 import React, { useState } from "react";
-import nodemailer from "nodemailer"
-import { sendEmail } from "../../lib/email";
-import WelcomeTemplate from "../../emails/WelcomeTemplate";
-// import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-// import { verifyCaptchaAction } from "../Captcha";
 
 const Contact = () => {
-  // const { executeRecaptcha } = useGoogleReCaptcha();
 
   async function handleSubmit(event) {
-
-    // const token = await executeRecaptcha("onSubmit")
-    // const verified = await verifyCaptchaAction(token)
-    // if (verified) {
       
       event.preventDefault();
       const emailData = {};
@@ -44,7 +34,6 @@ const Contact = () => {
         return () => clearTimeout(delayDebounceFn)
 
       });
-    // }
   }
 
   const [name, setName] = useState<any>('');

@@ -2,6 +2,7 @@ import SingleBlog from "@/components/Blog/SingleBlog";
 import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
+import Script from "next/script";
 
 export const metadata = {
   title: 'Blog | WebAriadne live search',
@@ -25,6 +26,20 @@ export const metadata = {
 const Blog = () => {
   return (
     <>
+      <head>
+        <Script
+          id="webariadne_blog_structured_markup"
+          type="application/ld+json"
+        >
+          {`
+            "@context": "https://schema.org/",
+            "@type": "Page",
+            "name": "Blog WebAriadne",
+            "datePublished": "2023-08-16",
+            "description": "You can read articles about search user interface.",
+          `}
+        </Script>
+      </head>
       <Breadcrumb
         pageName="Blog"
         description=""

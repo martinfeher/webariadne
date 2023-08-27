@@ -5,7 +5,6 @@ import Hero from "@/components/Hero";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 import { Poppins } from "@next/font/google";
 import Script from "next/script";
-import Head from 'next/head'
 
   const poppins = Poppins({
     weight: '200',
