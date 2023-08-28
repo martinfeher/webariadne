@@ -11,9 +11,7 @@
     "em": "email dev"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.16",
     "@mailerlite/mailerlite-nodejs": "^1.1.0",
-    "@next/font": "13.1.6",
     "@react-email/container": "0.0.8",
     "@react-email/html": "0.0.4",
     "@react-email/section": "0.0.9",
