@@ -7,6 +7,7 @@ import "../styles/weawp_search.min.css";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+// import GoogleAnalytics2 from "@/components/GoogleAnalytics2";
 
 
 export default function RootLayout({
