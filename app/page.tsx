@@ -6,11 +6,11 @@ import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 import { Poppins } from "next/font/google";
 import Script from "next/script";
 
-  const poppins = Poppins({
-    weight: ['200', '400'],
-    style: ['normal', 'italic'],
-    subsets: ["latin"] 
-  });
+const poppins = Poppins({
+  weight: ['200', '400'],
+  style: ['normal', 'italic'],
+  subsets: ["latin"] 
+});
 
 export const metadata = {
   title: 'WebAriadne live search ui',
