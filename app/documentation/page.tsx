@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
     title: 'Documentation | WebAriadne live search plugin for wordpress platform',
     description: 'Webariadne live website search with autocomplete function, with amdinistration zone customization, wordpress plugin',
-    keywords: 'WebAriadne application Documentation',
+    keywords: 'WebAriadne application Documentation, Wordpress plugin installation, processing type',
     icons: {
       icon: [{ url: '/images/favicon/favicon.ico' }, new URL('/images/favicon/favicon.ico', 'https://nx.webariadne.com')],
       apple: [
