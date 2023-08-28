@@ -22,7 +22,6 @@ const GoogleAnalytics = ({ GA_TRACKING_ID }: { GA_TRACKING_ID: string }) => {
       {cookiesConsent && (
         <Script src="/assets/webariadne/frontend/google-analytics.js" />
       )}
-
     </>
   );
 };
