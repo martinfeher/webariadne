@@ -62,7 +62,7 @@ const NewsLatterBox = ({mailerLiteApiKey}) => {
         <div className="mb-3">
           <input
             value={subscribeBtnText}
-            className="duration-80 -mb-[1px] w-[114px] cursor-pointer rounded-[5px] border border-transparent bg-primary py-[6px] text-center text-[11px] text-white outline-none transition ease-in-out hover:bg-opacity-80"
+            className="duration-80 -mb-[1px] w-[108px] cursor-pointer rounded-[7px] xl:rounded-[5px] border border-transparent bg-primary pb-[5px] pt-[6px] text-center text-[11px] text-white outline-none transition ease-in-out hover:bg-opacity-80"
             onClick={()=> handleSubscribe()} 
           />
         </div>

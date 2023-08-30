@@ -87,7 +87,7 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[200px] rounded border-[.5px] border-body-gray-300 bg-white pt-[10px] pb-[4px] px-3 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 w-[200px] rounded border-[.5px] border-body-gray-300 bg-white pt-[10px] pb-[4px] px-[16px] sm:px-[14px] duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
@@ -99,7 +99,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`h-[42px] flex py-2 text-[13px] lg:text-[16px] text-gray-700 group-hover:text-sky-600 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                            className={`h-[44px] sm:h-[42px] flex py-2 text-[13px] lg:text-[16px] text-gray-700 group-hover:text-sky-600 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                           >
                             {menuItem.title}
                           </Link>

@@ -129,7 +129,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className={`rounded-md ${messageSent ? 'bg-green-600' : 'bg-primary'} pt-[7px] pb-[5px] px-5 text-[13px] font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp`}
+                    <button className={`rounded-md ${messageSent ? 'bg-green-600' : 'bg-primary'} pt-[7px] pb-[5px] px-5 text-[12px] font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp`}
                     onClick={()=> handleClickSubmit()}>
                       {btnSubmitText}
                     </button>
