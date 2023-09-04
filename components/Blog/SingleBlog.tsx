@@ -11,7 +11,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
         className="wow fadeInUp relative overflow-hidden rounded-md bg-white"
         data-wow-delay=".1s"
       >
-        <div className="p-3 md:px-6 md:py-6">
+        <div className="blogArticle p-3 md:px-6 md:py-6">
           <Link href={path}>
             <h3 className="mb-4 block text-[19px] text-black">
               {title}

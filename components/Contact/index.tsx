@@ -82,6 +82,7 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        id="nameContactForm"
                         placeholder="Enter your name"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-[13px] text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                         name="fullName"
@@ -101,6 +102,7 @@ const Contact = () => {
                       </label>
                       <input
                         type="email"
+                        id="emailContactForm"
                         placeholder="Enter your email"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-[13px] text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                         name="email"
@@ -121,6 +123,7 @@ const Contact = () => {
                       <textarea
                         name="message"
                         value={message}
+                        id="messageContactForm"
                         onChange={(e)=>handleMessageChange(e)}
                         rows={5}
                         placeholder="Enter your Message"

@@ -50,7 +50,7 @@ const NewsLatterBox = ({mailerLiteApiKey}) => {
       <h3 className="mb-[9px] text-[13px] text-gray-600">
         Stay up-to-date on the latest news, articles and tools
       </h3>
-      <form className="flex flex-col">
+      <form id="newsletterForm" className="flex flex-col">
         <input
           type="email"
           name="email"
