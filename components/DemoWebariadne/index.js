@@ -79,7 +79,7 @@ export default function DemoWebariadne() {
                   demoWebariadne === "frontend"
                     ? "bg-slate-500"
                     : "bg-slate-600"
-                } w-[105px] xl:w-[96px] cursor-pointer rounded-l-[8px] xl:rounded-l-[6px] border-b border-l border-r border-t border-gray-300 text-white py-[8px] xl:py-[7px] text-center text-[12px] hover:bg-sky-800`}
+                } w-[105px] xl:w-[96px] cursor-pointer rounded-l-[8px] xl:rounded-l-[6px] border-b border-l border-r border-t border-gray-300 text-white py-[9px] xl:py-[8px] text-center text-[12px] hover:bg-sky-800`}
                 id="btnFrontend"
                 onClick={() => handleDemoButtonCLick("frontend")}
               >
