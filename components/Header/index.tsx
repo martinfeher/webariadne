@@ -44,11 +44,14 @@ const Header = () => {
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between my-[5px] lg:my-0">
               <div>
-              <Link href="/" className={`header-logo block w-full ${ sticky ? "py-[6px]" : "py-[4px]" } `}>
+              <Link href="/" className={`header-logo block w-full ${ sticky ? "ppy-[1px]" : "py-[1px]" } `}>
               <div className="flex items-center max-w-full pr-4 pl-[7px] mr-[22px]">
-                <div className="relative block w-[38px] h-[40px] max-w-[38px] max-h-[40px] mr-[8px] sm:mr-[10px]">
+                <div className="relative block w-[27px] max-w-[27px] h-[27px] max-h-[27px] mr-[8px] sm:mr-[10px]">
+                {/* <div className="relative block w-[28px] max-w-[28px] h-[28px] max-h-[28px] mr-[8px] sm:mr-[10px]"> */}
+                {/* <div className="relative block w-[38px] h-[40px] max-w-[38px] max-h-[40px] mr-[8px] sm:mr-[10px]"> */}
                   <Image
-                    src="/images/logo/icon_ua_200x200.png"
+                    // src="/images/logo/icon_wa01_200x200.png"
+                    src="/images/logo/icon_wa02_200x200.png"
                     alt="logo"
                     className="m-auto left-0"
                     fill
@@ -57,7 +60,8 @@ const Header = () => {
                     }}
                   />
                 </div>
-              <div className="mt-[1px] mb-[3px] text-[19px] text-gray-500 font-[600] cursor-pointer">WebAriadne</div>
+              <div className="mt-[1px] mb-[2px] text-[16px] text-gray-500 font-[600] cursor-pointer">WebAriadne</div>
+              {/* <div className="mt-[1px] mb-[3px] text-[19px] text-gray-500 font-[600] cursor-pointer">WebAriadne</div> */}
               </div>
               </Link>
             </div>
